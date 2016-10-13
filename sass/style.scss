@@ -182,7 +182,9 @@ figure {
   background: $brand-selection-color;
 }
 
-
+.rml-img {
+  @include border-radius(5px);
+}
 // Buttons
 // Buttons
 .btn {
@@ -1141,8 +1143,9 @@ div.cs-select{
 
 
 #about-us,
+#fh5co-client-section,
 #what-others-are-saying,
-#hotel-facilities,
+#rml-services,
 #testimonial,
 #fh5co-blog-section,
 #fh5co-hotel-section,
@@ -1152,9 +1155,11 @@ div.cs-select{
   padding: 7em 0;
 }
 
+#rml-services{
+  padding-bottom: 0px;
+}
 
-
-// #hotel-facilities {
+// #rml-services {
 //   float: left;
 //   width: 100%;
 //   @include transition(.5s);
@@ -1423,6 +1428,9 @@ div.cs-select{
 #fh5co-blog-section{
   width: 100%;
   float: left;
+  img {
+    margin-bottom: 24px;
+  }
   .blog-grid{
     background-repeat: no-repeat;
     background-size: cover;
@@ -1654,8 +1662,8 @@ input[type="text"] {
 }
 
 .section-title {
-  margin-bottom: 5em;
-  float: left;
+  // margin-bottom: 5em;
+  // float: left;
   width: 100%;
   z-index: 99;
   @media screen and (max-width: $screen-sm){
@@ -2194,9 +2202,37 @@ box-shadow: 0px 17px 56px -25px rgba(0,0,0,0.75);
 
 
 #fh5co-services, #fh5co-about, #fh5co-contact {
-	padding: 7em 0;
-	@media screen and (max-width: $screen-sm) {
-		padding: 4em 0;
+  padding: 7em 0;
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-services, #fh5co-about, #fh5co-contact {
+    padding: 4em 0; }
+  }
+
+#fh5co-contact {
+	.contact-info{
+		margin: 0;
+		padding: 0;
+		li{
+			// font-size: 16px;
+			list-style: none;
+			margin: 0 0 20px 0;
+			position: relative;
+			padding-left: 40px;
+
+			i{
+				position: absolute;
+				top: .3em;
+				left: 0;
+				font-size: 22px;
+				color: rgba($brand-black,.3);
+			}
+			a{
+				font-weight: 400!important;
+				color: rgba($brand-black,.3)
+			}
+		}
 	}
 }
 
@@ -2227,7 +2263,7 @@ box-shadow: 0px 17px 56px -25px rgba(0,0,0,0.75);
 	position: relative;
 	background: $brand-white;
 	padding: 4em 0;
-	border-radius: 5px;
+	border-radius: 4px;
 	-webkit-box-shadow: 0px 18px 88px -22px rgba(0,0,0,0.58);
 	-moz-box-shadow: 0px 18px 88px -22px rgba(0,0,0,0.58);
 	box-shadow: 0px 18px 88px -22px rgba(0,0,0,0.58);
@@ -2284,7 +2320,7 @@ box-shadow: 0px 17px 56px -25px rgba(0,0,0,0.75);
 	background-position: center center;
 	margin-bottom: 30px;
 	position: relative;
-	@include border-radius(7px);
+	@include border-radius(5px);
 
 	@media screen and (max-width: $screen-xs) {
 		height: 400px;

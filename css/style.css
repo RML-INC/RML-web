@@ -5888,6 +5888,12 @@ figure {
   color: #fcfcfc;
   background: #FABD15; }
 
+.rml-img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
@@ -6720,8 +6726,9 @@ div.cs-select span {
       right: 0; }
 
 #about-us,
+#fh5co-client-section,
 #what-others-are-saying,
-#hotel-facilities,
+#rml-services,
 #testimonial,
 #fh5co-blog-section,
 #fh5co-hotel-section,
@@ -6729,6 +6736,9 @@ div.cs-select span {
 #fh5co-contact-section,
 #footer {
   padding: 7em 0; }
+
+#rml-services {
+  padding-bottom: 0px; }
 
 #tabs {
   float: left;
@@ -6935,6 +6945,8 @@ div.cs-select span {
 #fh5co-blog-section {
   width: 100%;
   float: left; }
+  #fh5co-blog-section img {
+    margin-bottom: 24px; }
   #fh5co-blog-section .blog-grid {
     background-repeat: no-repeat;
     background-size: cover;
@@ -7115,8 +7127,6 @@ input[type="text"] {
   background: #e6e6e6; }
 
 .section-title {
-  margin-bottom: 5em;
-  float: left;
   width: 100%;
   z-index: 99; }
   @media screen and (max-width: 768px) {
@@ -7567,9 +7577,28 @@ input[type="text"] {
 
 #fh5co-services, #fh5co-about, #fh5co-contact {
   padding: 7em 0; }
-  @media screen and (max-width: 768px) {
-    #fh5co-services, #fh5co-about, #fh5co-contact {
-      padding: 4em 0; } }
+
+@media screen and (max-width: 768px) {
+  #fh5co-services, #fh5co-about, #fh5co-contact {
+    padding: 4em 0; } }
+
+#fh5co-contact .contact-info {
+  margin: 0;
+  padding: 0; }
+  #fh5co-contact .contact-info li {
+    list-style: none;
+    margin: 0 0 20px 0;
+    position: relative;
+    padding-left: 40px; }
+    #fh5co-contact .contact-info li i {
+      position: absolute;
+      top: .3em;
+      left: 0;
+      font-size: 22px;
+      color: rgba(0, 0, 0, 0.3); }
+    #fh5co-contact .contact-info li a {
+      font-weight: 400 !important;
+      color: rgba(0, 0, 0, 0.3); }
 
 .heading-section {
   padding-bottom: 1em;
@@ -7593,7 +7622,7 @@ input[type="text"] {
   position: relative;
   background: #fff;
   padding: 4em 0;
-  border-radius: 5px;
+  border-radius: 4px;
   -webkit-box-shadow: 0px 18px 88px -22px rgba(0, 0, 0, 0.58);
   -moz-box-shadow: 0px 18px 88px -22px rgba(0, 0, 0, 0.58);
   box-shadow: 0px 18px 88px -22px rgba(0, 0, 0, 0.58); }
@@ -7640,10 +7669,10 @@ input[type="text"] {
   background-position: center center;
   margin-bottom: 30px;
   position: relative;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  border-radius: 7px; }
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
   @media screen and (max-width: 480px) {
     .fh5co-grid {
       height: 400px; } }
