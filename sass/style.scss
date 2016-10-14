@@ -1470,6 +1470,22 @@ div.cs-select{
   }
 }
 
+.rml-clients-a{
+  margin-top: 50px;
+  .read-more-btn{
+    margin-bottom: 50px;
+    &:after{
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 50%;
+      width: 100px;
+      margin-left: -50px;
+      height: 2px;
+      background: $brand-primary;
+    }
+  }
+}
 .services-sm{
   position: relative;
   margin-bottom: 60px;
