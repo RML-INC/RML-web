@@ -49,7 +49,8 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
-
+	<!-- aos animate in -->
+	<link rel="stylesheet" href="css/aos.css">
 	<!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -118,7 +119,7 @@
   			<div class="container">
   				<div class="row">
   					<div class="col-md-4">
-  						<div class="fh5co-grid" style="background-image: url(images/work-1.jpg);">
+  						<div data-aos="fade-right" class="fh5co-grid" style="background-image: url(images/work-1.jpg);">
   							<a class="image-popup text-center" href="#">
   								<div class="prod-title">
   									<h3>Don’t Just Stand There</h3>
@@ -137,7 +138,7 @@
   							</a>
   						</div>
   					</div>
-  					<div class="col-md-4">
+  					<div data-aos="fade-left" class="col-md-4">
   						<div class="fh5co-grid" style="background-image: url(images/work-3.jpg);">
   							<a class="image-popup text-center" href="#">
   								<div class="prod-title">
@@ -148,7 +149,7 @@
   						</div>
   					</div>
   					<div class="col-md-4">
-  						<div class="fh5co-grid" style="background-image: url(images/work-4.jpg);">
+  						<div data-aos="fade-right" class="fh5co-grid" style="background-image: url(images/work-4.jpg);">
   							<a class="image-popup text-center" href="#">
   								<div class="prod-title">
   									<h3>Don’t Just Stand There</h3>
@@ -168,7 +169,7 @@
   						</div>
   					</div>
   					<div class="col-md-4">
-  						<div class="fh5co-grid" style="background-image: url(images/work-6.jpg);">
+  						<div data-aos="fade-left" class="fh5co-grid" style="background-image: url(images/work-6.jpg);">
   							<a class="image-popup text-center" href="#">
   								<div class="prod-title">
   									<h3>Don’t Just Stand There</h3>
@@ -262,6 +263,11 @@
 	<!-- CS Select -->
 	<script src="js/classie.js"></script>
 	<script src="js/selectFx.js"></script>
+	<!-- aso animate -->
+	<script src="js/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
 	<!-- Google Map -->
