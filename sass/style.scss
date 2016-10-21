@@ -752,7 +752,7 @@ figure {
       font-size: 50px;
       font-weight: 400;
       color: $brand-white;
-      line-height: 32px;
+      // line-height: 32px;
       @media screen and (max-width: $screen-sm) {
         font-size: 24px;
       }
@@ -1150,8 +1150,7 @@ div.cs-select{
 #fh5co-blog-section,
 #fh5co-hotel-section,
 #fh5co-services-section,
-#fh5co-contact-section,
-#footer{
+#fh5co-contact-section{
   padding: 7em 0;
 }
 
@@ -1175,7 +1174,7 @@ div.cs-select{
     width: 100%;
     > a {
       float: left;
-      width: 16.666667%;
+      width: 25%;
       text-align: center;
       font-size: 13px;
       letter-spacing: 2px;
@@ -1428,8 +1427,16 @@ div.cs-select{
 #fh5co-blog-section{
   width: 100%;
   float: left;
+  p{
+    @media screen and (max-width: $screen-md){
+      margin-bottom: 40px;
+    }
+  }
   img {
     margin-bottom: 24px;
+  }
+  .heading-section{
+    margin-bottom: 0px;
   }
   .blog-grid{
     background-repeat: no-repeat;
@@ -1471,7 +1478,10 @@ div.cs-select{
 }
 
 .rml-clients-a{
-  margin-top: 50px;
+  margin-top: 2em;
+  @media screen and (max-width: $screen-sm) {
+    margin-top: 5em;
+  }
   .read-more-btn{
     margin-bottom: 50px;
     &:after{
@@ -1593,6 +1603,8 @@ input[type="text"] {
   float: left;
   width: 100%;
   font-size: 16px;
+  padding-top:2em;
+  padding-bottom:1em;
   a {
     color: $brand-primary;
     &:hover {
@@ -1874,13 +1886,13 @@ box-shadow: 0px 17px 56px -25px rgba(0,0,0,0.75);
   text-decoration: none;
   &.active i {
     &::before, &::after {
-      background: $brand-black;
+      background: $brand-primary;
     }
   }
   &.dark {
     &.active i {
       &::before, &::after {
-        background: $brand-black;
+        background: $brand-primary;
       }
     }
   }
@@ -1893,17 +1905,17 @@ box-shadow: 0px 17px 56px -25px rgba(0,0,0,0.75);
     @include inline-block;
     width: 30px;
     height: 2px;
-    color: $brand-black;
+    color: $brand-primary;
     font:bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent:-55px;
-    background: $brand-black;
+    background: $brand-primary;
     transition: all .2s ease-out;
      &::before, &::after {
         content:'';
       width: 30px;
       height: 2px;
-      background: $brand-black;
+      background: $brand-primary;
       position: absolute;
       left:0;
       @include transition(.2s);
@@ -1912,11 +1924,11 @@ box-shadow: 0px 17px 56px -25px rgba(0,0,0,0.75);
   &.dark {
     i {
       position: relative;
-      color: $brand-black;
-      background: $brand-black;
+      color: $brand-primary;
+      background: $brand-primary;
       transition: all .2s ease-out;
        &::before, &::after {
-        background: $brand-black;
+        background: $brand-primary;
         @include transition(.2s);
       }
     }
@@ -1955,20 +1967,20 @@ box-shadow: 0px 17px 56px -25px rgba(0,0,0,0.75);
           transform: rotateZ(-45deg);
 }
 .fh5co-nav-toggle {
-    position: absolute;
-    top: 0px;
+  position: absolute;
+  top: 0px;
   right: 0px;
   z-index: 9999;
   display: block;
   margin: 0 auto;
   display: none;
   cursor: pointer;
-    @media screen and (max-width: $screen-sm) {
-      display: block;
-      top: 0px;
-      // margin-top: 2em;
-    }
-
+  @media screen and (max-width: $screen-sm) {
+    display: block;
+    top: 0px;
+    padding-top: 6px;
+    // margin-top: 2em;
+  }
 }
 
 // // Helper Class
@@ -2372,10 +2384,10 @@ box-shadow: 0px 17px 56px -25px rgba(0,0,0,0.75);
 	}
 
 	&:hover{
-		-webkit-transform: scale(1.05);
-		-moz-transform: scale(1.05);
-		-o-transform: scale(1.05);
-		transform: scale(1.05);
+		// -webkit-transform: scale(1.05);
+		// -moz-transform: scale(1.05);
+		// -o-transform: scale(1.05);
+		// transform: scale(1.05);
 		.image-popup{
 			opacity: 1;
 		}

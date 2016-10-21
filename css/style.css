@@ -6383,8 +6383,7 @@ figure {
     .slider-text > .slider-text-inner h2 {
       font-size: 50px;
       font-weight: 400;
-      color: #fff;
-      line-height: 32px; }
+      color: #fff; }
       @media screen and (max-width: 768px) {
         .slider-text > .slider-text-inner h2 {
           font-size: 24px; } }
@@ -6733,8 +6732,7 @@ div.cs-select span {
 #fh5co-blog-section,
 #fh5co-hotel-section,
 #fh5co-services-section,
-#fh5co-contact-section,
-#footer {
+#fh5co-contact-section {
   padding: 7em 0; }
 
 #rml-services {
@@ -6749,7 +6747,7 @@ div.cs-select span {
     width: 100%; }
     #tabs .tabs-nav > a {
       float: left;
-      width: 16.666667%;
+      width: 25%;
       text-align: center;
       font-size: 13px;
       letter-spacing: 2px;
@@ -6945,8 +6943,13 @@ div.cs-select span {
 #fh5co-blog-section {
   width: 100%;
   float: left; }
+  @media screen and (max-width: 992px) {
+    #fh5co-blog-section p {
+      margin-bottom: 40px; } }
   #fh5co-blog-section img {
     margin-bottom: 24px; }
+  #fh5co-blog-section .heading-section {
+    margin-bottom: 0px; }
   #fh5co-blog-section .blog-grid {
     background-repeat: no-repeat;
     background-size: cover;
@@ -6979,7 +6982,10 @@ div.cs-select span {
         color: rgba(0, 0, 0, 0.7); }
 
 .rml-clients-a {
-  margin-top: 50px; }
+  margin-top: 2em; }
+  @media screen and (max-width: 768px) {
+    .rml-clients-a {
+      margin-top: 5em; } }
   .rml-clients-a .read-more-btn {
     margin-bottom: 50px; }
     .rml-clients-a .read-more-btn:after {
@@ -7080,7 +7086,9 @@ input[type="text"] {
   color: #FABD15;
   float: left;
   width: 100%;
-  font-size: 16px; }
+  font-size: 16px;
+  padding-top: 2em;
+  padding-bottom: 1em; }
   #footer a {
     color: #FABD15; }
     #footer a:hover {
@@ -7280,9 +7288,9 @@ input[type="text"] {
   cursor: pointer;
   text-decoration: none; }
   .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
-    background: #000; }
+    background: #FABD15; }
   .fh5co-nav-toggle.dark.active i::before, .fh5co-nav-toggle.dark.active i::after {
-    background: #000; }
+    background: #FABD15; }
   .fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
     outline: none;
     border-bottom: none !important; }
@@ -7294,17 +7302,17 @@ input[type="text"] {
     *display: inline;
     width: 30px;
     height: 2px;
-    color: #000;
+    color: #FABD15;
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
-    background: #000;
+    background: #FABD15;
     transition: all .2s ease-out; }
     .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
       content: '';
       width: 30px;
       height: 2px;
-      background: #000;
+      background: #FABD15;
       position: absolute;
       left: 0;
       -webkit-transition: 0.2s;
@@ -7312,11 +7320,11 @@ input[type="text"] {
       transition: 0.2s; }
   .fh5co-nav-toggle.dark i {
     position: relative;
-    color: #000;
-    background: #000;
+    color: #FABD15;
+    background: #FABD15;
     transition: all .2s ease-out; }
     .fh5co-nav-toggle.dark i::before, .fh5co-nav-toggle.dark i::after {
-      background: #000;
+      background: #FABD15;
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
       transition: 0.2s; }
@@ -7364,7 +7372,8 @@ input[type="text"] {
   @media screen and (max-width: 768px) {
     .fh5co-nav-toggle {
       display: block;
-      top: 0px; } }
+      top: 0px;
+      padding-top: 6px; } }
 
 @media screen and (max-width: 480px) {
   .col-xxs-12 {
@@ -7715,10 +7724,5 @@ input[type="text"] {
         font-size: 20px; }
       .fh5co-grid .image-popup .prod-title span {
         color: #fff; }
-  .fh5co-grid:hover {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05); }
-    .fh5co-grid:hover .image-popup {
-      opacity: 1; }
+  .fh5co-grid:hover .image-popup {
+    opacity: 1; }
