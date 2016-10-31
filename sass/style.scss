@@ -682,7 +682,13 @@ figure {
       overflow: hidden;
       img{
         height: 300px;
+        @media screen and (max-width: $screen-sm) {
+          margin-top: -100px;
+        }
       }
+
+
+
       li {
         background-repeat: no-repeat;
         background-size: cover;
@@ -1725,6 +1731,10 @@ input[type="text"] {
 .fh5co-table-cell,
 .fh5co-parallax {
   height: 600px;
+
+  @media screen and (max-width: $screen-sm) {
+    height: 520px;
+  }
 }
 // .fh5co-parallax2 {
 //   padding-top: 10em;
@@ -1750,7 +1760,6 @@ input[type="text"] {
 }
 .fh5co-parallax {
   @media screen and (max-width: $screen-sm) {
-    height: inherit;
     padding: 4em 0;
   }
   .fh5co-intro {
@@ -1785,7 +1794,12 @@ input[type="text"] {
 .fh5co-table-cell {
   display: table-cell;
   vertical-align: middle;
+  @media screen and (max-width: $screen-sm) {
+    padding-top: 150px;
+    vertical-align: top;
+  }
 }
+
 
 
 
@@ -2392,4 +2406,24 @@ box-shadow: 0px 17px 56px -25px rgba(0,0,0,0.75);
 			opacity: 1;
 		}
 	}
+}
+
+.rml-desktop{
+  display:inline;
+}
+
+.rml-mobile-only{
+  display: none;
+}
+
+
+@media screen and (max-width: $screen-sm) {
+
+  .rml-desktop{
+    display:none;
+  }
+
+  .rml-mobile-only{
+    display: inline;
+  }
 }

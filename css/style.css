@@ -6326,6 +6326,9 @@ figure {
       overflow: hidden; }
       #fh5co-hero .flexslider .slides img {
         height: 300px; }
+        @media screen and (max-width: 768px) {
+          #fh5co-hero .flexslider .slides img {
+            margin-top: -100px; } }
       #fh5co-hero .flexslider .slides li {
         background-repeat: no-repeat;
         background-size: cover;
@@ -7173,6 +7176,11 @@ input[type="text"] {
 .fh5co-table-cell,
 .fh5co-parallax {
   height: 600px; }
+  @media screen and (max-width: 768px) {
+    .fh5co-table,
+    .fh5co-table-cell,
+    .fh5co-parallax {
+      height: 520px; } }
 
 .fh5co-parallax {
   background-color: #555;
@@ -7189,7 +7197,6 @@ input[type="text"] {
 
 @media screen and (max-width: 768px) {
   .fh5co-parallax {
-    height: inherit;
     padding: 4em 0; } }
 
 .fh5co-parallax .fh5co-intro h1 {
@@ -7219,6 +7226,10 @@ input[type="text"] {
 .fh5co-table-cell {
   display: table-cell;
   vertical-align: middle; }
+  @media screen and (max-width: 768px) {
+    .fh5co-table-cell {
+      padding-top: 150px;
+      vertical-align: top; } }
 
 .js .animate-box {
   opacity: 0; }
@@ -7726,3 +7737,15 @@ input[type="text"] {
         color: #fff; }
   .fh5co-grid:hover .image-popup {
     opacity: 1; }
+
+.rml-desktop {
+  display: inline; }
+
+.rml-mobile-only {
+  display: none; }
+
+@media screen and (max-width: 768px) {
+  .rml-desktop {
+    display: none; }
+  .rml-mobile-only {
+    display: inline; } }
