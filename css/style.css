@@ -7036,21 +7036,6 @@ div.cs-select span {
   .services .desc {
     padding-left: 100px; }
 
-.contact-info {
-  margin: 0;
-  padding: 0; }
-  .contact-info li {
-    list-style: none;
-    margin: 0 0 20px 0;
-    position: relative;
-    padding-left: 40px; }
-    .contact-info li i {
-      position: absolute;
-      top: .3em;
-      left: 0;
-      font-size: 22px;
-      color: rgba(0, 0, 0, 0.5); }
-
 .form-control {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -7627,10 +7612,10 @@ input[type="text"] {
       top: .3em;
       left: 0;
       font-size: 22px;
-      color: rgba(0, 0, 0, 0.3); }
+      color: #FABD15; }
     #fh5co-contact .contact-info li a {
       font-weight: 400 !important;
-      color: rgba(0, 0, 0, 0.3); }
+      color: rgba(0, 0, 0, 0.5); }
 
 .heading-section {
   padding-bottom: 1em;
