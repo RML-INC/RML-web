@@ -1,13 +1,19 @@
 
-TITLE: 
-Luxe - 100% Fully Responsive Free HTML5 template
+TITLE:
+RML- Rock Mountain Line
 
 AUTHOR:
-DESIGNED & DEVELOPED by FREEHTML5.co
+Jesse Orrico
 
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
+Website: http://jesseorrico.com
+Extra Dev help by: http://rachelsartell.com
+
+
+UP AND RUNNING:
+remote site loc: /home/ubuntu/rml/RMLnew (NOTE::: temp till launch)
+sass compile: $ node-sass sass/style.scss css/style.css
+
+
 
 
 CREDITS:
@@ -71,4 +77,3 @@ http://www.codrops.com
 
 Stellar Parallax
 http://markdalgleish.com/projects/stellar.js/
-

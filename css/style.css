@@ -7678,7 +7678,8 @@ input[type="text"] {
       line-height: 1.6em;
       color: #555555; }
   .fh5co-testimonial span {
-    font-style: italic; }
+    font-style: italic;
+    padding: 0 16px; }
 
 .fh5co-grid {
   height: 302px;
