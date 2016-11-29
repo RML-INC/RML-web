@@ -683,7 +683,8 @@ figure {
       img{
         height: 300px;
         @media screen and (max-width: $screen-sm) {
-          margin-top: -100px;
+          margin-top: -160px;
+          height: 200px;
         }
       }
 
@@ -695,6 +696,10 @@ figure {
         background-position: center center;
         min-height: 700px;
         position: relative;
+        @media screen and (max-width: $screen-sm) {
+          height: 500px;
+          min-height: 500px;
+        }
         &:after{
           position: absolute;
           top: 0;
@@ -754,13 +759,19 @@ figure {
     vertical-align: middle;
     min-height: 700px;
     position: relative;
+    .desc{
+      @media screen and (max-width: $screen-sm) {
+        margin-top: -160px;
+      }
+    }
     h2 {
       font-size: 50px;
       font-weight: 400;
       color: $brand-white;
       line-height: 50px;
       @media screen and (max-width: $screen-sm) {
-        font-size: 24px;
+        font-size: 20px;
+        line-height: 24px;
       }
     }
     p{

@@ -6328,13 +6328,18 @@ figure {
         height: 300px; }
         @media screen and (max-width: 768px) {
           #fh5co-hero .flexslider .slides img {
-            margin-top: -100px; } }
+            margin-top: -160px;
+            height: 200px; } }
       #fh5co-hero .flexslider .slides li {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         min-height: 700px;
         position: relative; }
+        @media screen and (max-width: 768px) {
+          #fh5co-hero .flexslider .slides li {
+            height: 500px;
+            min-height: 500px; } }
         #fh5co-hero .flexslider .slides li:after {
           position: absolute;
           top: 0;
@@ -6383,6 +6388,9 @@ figure {
     vertical-align: middle;
     min-height: 700px;
     position: relative; }
+    @media screen and (max-width: 768px) {
+      .slider-text > .slider-text-inner .desc {
+        margin-top: -160px; } }
     .slider-text > .slider-text-inner h2 {
       font-size: 50px;
       font-weight: 400;
@@ -6390,7 +6398,8 @@ figure {
       line-height: 50px; }
       @media screen and (max-width: 768px) {
         .slider-text > .slider-text-inner h2 {
-          font-size: 24px; } }
+          font-size: 20px;
+          line-height: 24px; } }
     .slider-text > .slider-text-inner p {
       margin-bottom: 30px;
       font-size: 20px;
