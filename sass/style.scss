@@ -421,7 +421,7 @@ figure {
   @media screen and (max-width: $screen-sm) {
     width: 100%;
     float: none;
-    margin-top: 0;
+    margin-top: -4px;
   }
 
 }
@@ -1795,7 +1795,7 @@ input[type="text"] {
   display: table-cell;
   vertical-align: middle;
   @media screen and (max-width: $screen-sm) {
-    padding-top: 150px;
+    padding-top: 100px;
     vertical-align: top;
   }
 }
