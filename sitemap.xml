@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+<!-- Main -->
+  <url>
+    <loc>http://www.rmlmontana.com</loc>
+    <lastmod>2016-11-29T16:28:32+00:00</lastmod>
+  </url>
+
+<!-- Index -->
+  <url>
+    <loc>http://www.rmlmontana.com/index.html</loc>
+
+    <!-- Images -->
+    <image:image>
+       <image:loc>http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
+       <image:caption>RML Rocky Mountain Line Logo</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://rmlmontana.com/images/headers/rml-matt-anderson-owner.jpg</image:loc>
+       <image:caption>Matt Anderson owner of Rocky Mountain Line</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://rmlmontana.com/images/headers/working-with-customers.jpg</image:loc>
+       <image:caption>RML working with its customers to lay fiber</image:caption>
+    </image:image>
+    <image:image>
+       <image:loc>http://rmlmontana.com/images/headers/RML-Worker-Seth-Curb-to-home.jpg</image:loc>
+       <image:caption>Seth manager at RML working curb to home</image:caption>
+    </image:image>
+
+    <!-- Video Example
+    <video:video>
+      <video:content_loc>
+        http://www.example.com/video123.flv
+      </video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">
+        http://www.example.com/videoplayer.swf?video=123
+      </video:player_loc>
+      <video:thumbnail_loc>
+        http://www.example.com/thumbs/123.jpg
+      </video:thumbnail_loc>
+      <video:title>Grilling steaks for summer</video:title>
+      <video:description>
+        Cook the perfect steak every time.
+      </video:description>
+    </video:video>
+    -->
+
+    <!-- News Example -->
+    <news:news>
+      <news:publication>
+        <news:name>The Example Times</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:genres>PressRelease, Blog</news:genres>
+      <news:publication_date>2008-12-23</news:publication_date>
+      <news:title>Companies A, B in Merger Talks</news:title>
+      <news:keywords>business, merger, acquisition, A, B</news:keywords>
+      <news:stock_tickers>NASDAQ:A, NASDAQ:B</news:stock_tickers>
+    </news:news>
+  </url>
+</urlset>
+
+<!-- Services -->
+<!-- About Us -->
+<!-- Contact -->
+<!-- Clients -->
