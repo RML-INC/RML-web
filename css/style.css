@@ -7742,3 +7742,10 @@ input[type="text"] {
     display: none; }
   .rml-mobile-only {
     display: inline; } }
+
+.fh5co-social-icons {
+  margin-bottom: 0px;
+  margin-top: 1.2rem; }
+  .fh5co-social-icons i {
+    font-size: 24px;
+    padding-right: 12px; }
