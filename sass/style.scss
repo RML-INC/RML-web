@@ -401,7 +401,7 @@ figure {
   text-transform: uppercase;
   font-weight: 300;
   float: left;
-  margin-bottom: 0;
+  margin-bottom: 1.2em;
   margin-top: 1.2em;
   a{
     color: rgba($brand-white,1);
@@ -460,18 +460,24 @@ figure {
   }
 }
 
+li{
+  cursor: pointer;
+}
+
 .sf-menu li,
 .sf-menu ul li,
 .sf-menu ul ul li,
 .sf-menu li:hover,
 .sf-menu li.sfHover  {
   background: transparent;
+  cursor: pointer;
 }
 .sf-menu ul li a,
 .sf-menu ul ul li a {
   text-transform: none;
   padding: .25em 1em!important;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 .sf-menu li:hover a,
 .sf-menu li.sfHover a,
@@ -1620,8 +1626,8 @@ input[type="text"] {
   float: left;
   width: 100%;
   font-size: 16px;
-  padding-top:2em;
-  padding-bottom:1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   a {
     color: $brand-primary;
     &:hover {
@@ -1635,8 +1641,13 @@ input[type="text"] {
     font-size: 16px;
   }
   h3 {
+    margin: 12px 0;
     color: $brand-white;
     font-size: 15px;
+
+    a{
+      color: $brand-white;
+    }
   }
   ul.link {
     padding: 0;
@@ -1651,6 +1662,9 @@ input[type="text"] {
 
   .copyright {
     margin-top: 0;
+    p{
+      font-size: 10px;
+    }
   }
 
   #form-subscribe {
@@ -2447,5 +2461,17 @@ box-shadow: 0px 17px 56px -25px rgba(0,0,0,0.75);
   i{
     font-size: 24px;
     padding-right: 12px;
+  }
+}
+
+.rml-footer-contact{
+  ul{
+    list-style: none;
+    padding: 0px;
+
+    li{
+      color: $brand-primary;
+      font-size: 16px;
+    }
   }
 }

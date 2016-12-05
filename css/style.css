@@ -6084,7 +6084,7 @@ figure {
   text-transform: uppercase;
   font-weight: 300;
   float: left;
-  margin-bottom: 0;
+  margin-bottom: 1.2em;
   margin-top: 1.2em; }
   #fh5co-logo a {
     color: white;
@@ -6131,18 +6131,23 @@ figure {
   .sf-menu a:hover, .sf-menu a:focus, .sf-menu a.active {
     color: #fff !important; }
 
+li {
+  cursor: pointer; }
+
 .sf-menu li,
 .sf-menu ul li,
 .sf-menu ul ul li,
 .sf-menu li:hover,
 .sf-menu li.sfHover {
-  background: transparent; }
+  background: transparent;
+  cursor: pointer; }
 
 .sf-menu ul li a,
 .sf-menu ul ul li a {
   text-transform: none;
   padding: 0.25em 1em !important;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  cursor: pointer; }
 
 .sf-menu li:hover a,
 .sf-menu li.sfHover a,
@@ -7083,7 +7088,7 @@ input[type="text"] {
   width: 100%;
   font-size: 16px;
   padding-top: 2em;
-  padding-bottom: 1em; }
+  padding-bottom: 2em; }
   #footer a {
     color: #FABD15; }
     #footer a:hover {
@@ -7093,8 +7098,11 @@ input[type="text"] {
     color: #fff;
     font-size: 16px; }
   #footer h3 {
+    margin: 12px 0;
     color: #fff;
     font-size: 15px; }
+    #footer h3 a {
+      color: #fff; }
   #footer ul.link {
     padding: 0;
     margin: 0 0 30px 0; }
@@ -7105,6 +7113,8 @@ input[type="text"] {
       list-style: none; }
   #footer .copyright {
     margin-top: 0; }
+    #footer .copyright p {
+      font-size: 10px; }
   #footer #form-subscribe .form-field {
     position: relative; }
   #footer #form-subscribe input[type="email"] {
@@ -7749,3 +7759,10 @@ input[type="text"] {
   .fh5co-social-icons i {
     font-size: 24px;
     padding-right: 12px; }
+
+.rml-footer-contact ul {
+  list-style: none;
+  padding: 0px; }
+  .rml-footer-contact ul li {
+    color: #FABD15;
+    font-size: 16px; }
