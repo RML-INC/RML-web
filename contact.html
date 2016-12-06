@@ -109,7 +109,6 @@
 					<div class="fh5co-intro fh5co-table-cell">
 						<h1 class="text-center">Contact Us</h1>
 						<p>We'd love to hear from you!</p>
-						<a href="about.html" class="btn btn-primary btn-lg">Learn More About Us</a>
 					</div>
 				</div>
 			</div>
@@ -126,7 +125,6 @@
 					<div class="fh5co-intro fh5co-table-cell">
 						<h1 class="text-center">Contact Us</h1>
 						<p>We'd love to hear from you!</p>
-						<a href="about.html" class="btn btn-primary btn-lg">Learn More About Us</a>
 					</div>
 				</div>
 			</div>
@@ -136,32 +134,44 @@
 
 	<div id="fh5co-contact" class="">
 		<div class="container">
-			<form action="#">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="fh5co-grid" style="background-image: url(images/headers/missions-montana.jpg);">
-						</div>
-					</div>
-					<div class="col-md-6">
-						<h3 class="section-title">Need a job done? We want to help!</h3>
-						<ul class="contact-info">
-							<li><i class="icon-location-pin"></i>12150 Pulp Mill Rd Missoula, MT. 59808</li>
-							<li><i class="icon-phone2"></i><a href="tel:+4065468881">406.546.8881</a></li>
-							<li><i class="icon-mail"></i>
-								<script type="text/javascript">
-									document.write("<a href=\"mail" + "to:" + new Array("matt","rmlmontana.com").join("@") + "\">" + "matt@rmlmontana.com" + "</" + "a>");
-								</script>
-							</span>
-						</li>
-							<li><i class="icon-globe2"></i><a href="www.rmlmontana.com">www.rmlmontana.com</a></li>
-						</ul>
-					</div>
-
+			<div class="row">
+				<div class="col-md-6">
+					<form id="contact" action="http://formspree.io/matt@rmlmontana.com" method="post">
+						<h3>Contact RML</h3>
+						<fieldset>
+							<input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus>
+						</fieldset>
+						<fieldset>
+							<input placeholder="Your Email Address"  name="email" type="email" tabindex="2" required>
+						</fieldset>
+						<fieldset>
+							<input placeholder="Your Phone Number (optional)" name="phone" type="tel" tabindex="3" required>
+						</fieldset>
+						<fieldset>
+							<textarea placeholder="Type your message here...." name="message" tabindex="5" required></textarea>
+						</fieldset>
+						<fieldset>
+							<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+						</fieldset>
+						<p class="formspree-copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
+					</form>
 				</div>
-			</form>
+				<div class="col-md-6">
+					<h3 class="section-title">Need a job done? We want to help!</h3>
+					<ul class="contact-info">
+						<li><i class="icon-location-pin"></i>12150 Pulp Mill Rd Missoula, MT. 59808</li>
+						<li><i class="icon-phone2"></i><a href="tel:+4065468881">406.546.8881</a></li>
+						<li><i class="icon-mail"></i>
+							<script type="text/javascript">
+								document.write("<a href=\"mail" + "to:" + new Array("matt","rmlmontana.com").join("@") + "\">" + "matt@rmlmontana.com" + "</" + "a>");
+							</script></span>
+						</li>
+						<li><i class="icon-globe2"></i><a href="www.rmlmontana.com">www.rmlmontana.com</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
-
 
 	<!-- END fh5co-contact -->
 	<div id="map" class="fh5co-map"></div>
