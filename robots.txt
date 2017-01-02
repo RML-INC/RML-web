@@ -1,0 +1,16 @@
+User-Agent: *
+Allow: /sitemap.xml
+Allow: /index.html
+Allow: /services.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /clients.html
+Disallow: /css/
+Disallow: /js/
+Disallow: /.sass-cashe/
+Disallow: /fonts/
+Disallow: /images/
+Disallow: /sass/
+Disallow: /.DS_Store
+Disallow: /old_index.html
+Disallow: /README.txt
