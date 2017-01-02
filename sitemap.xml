@@ -5,13 +5,13 @@
 
 <!-- Main -->
   <url>
-    <loc>http://www.rmlmontana.com</loc>
+    <loc>http://rmlmontana.com/</loc>
     <lastmod>2017-1-02T10:28:32+00:00</lastmod>
   </url>
 
 <!-- Index -->
   <url>
-    <loc>http://www.rmlmontana.com/index.html</loc>
+    <loc>http://rmlmontana.com//index.html</loc>
 
     <!-- Images -->
     <!-- Hero Image -->
@@ -98,7 +98,7 @@
 
   <!-- Services -->
     <url>
-      <loc>http://www.rmlmontana.com/services.html</loc>
+      <loc>http://rmlmontana.com//services.html</loc>
       <!-- Hero -->
       <image:image>
         <image:loc>http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
@@ -155,7 +155,7 @@
 
     <!-- About Us -->
       <url>
-        <loc>http://www.rmlmontana.com/about.html</loc>
+        <loc>http://rmlmontana.com//about.html</loc>
 
         <!-- Hero -->
         <image:image>
@@ -196,7 +196,7 @@
 
     <!-- Clients -->
       <url>
-        <loc>http://www.rmlmontana.com/clients.html</loc>
+        <loc>http://rmlmontana.com//clients.html</loc>
         <!-- Hero -->
         <image:image>
           <image:loc>http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
@@ -215,7 +215,7 @@
 
     <!-- Contact -->
       <url>
-        <loc>http://www.rmlmontana.com/contact.html</loc>
+        <loc>http://rmlmontana.com//contact.html</loc>
         <image:image>
           <image:loc>http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
           <image:caption>RML Rocky Mountain Line Logo</image:caption>
