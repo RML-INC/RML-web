@@ -6,7 +6,7 @@
 <!-- Main -->
   <url>
     <loc>http://www.rmlmontana.com</loc>
-    <lastmod>2016-11-29T16:28:32+00:00</lastmod>
+    <lastmod>2017-1-02T10:28:32+00:00</lastmod>
   </url>
 
 <!-- Index -->
@@ -94,38 +94,80 @@
        <image:loc>http://rmlmontana.com/images/work-images/rml-talking-with-clients.jpg</image:loc>
        <image:caption>School Fiber Install: RML is helping to install fiber in all High Schools, Middle Schools, &amp; Elementry Schools in the Blackfoot Telephone Co-op (BTC) service areas.</image:caption>
     </image:image>
-
-
-    <!-- Example -->
-    <image:image>
-       <image:loc>#</image:loc>
-       <image:caption>Desc</image:caption>
-    </image:image>
-
-    <!-- Video Example
-    <video:video>
-      <video:content_loc>
-        http://www.example.com/video123.flv
-      </video:content_loc>
-      <video:player_loc allow_embed="yes" autoplay="ap=1">
-        http://www.example.com/videoplayer.swf?video=123
-      </video:player_loc>
-      <video:thumbnail_loc>
-        http://www.example.com/thumbs/123.jpg
-      </video:thumbnail_loc>
-      <video:title>Grilling steaks for summer</video:title>
-      <video:description>
-        Cook the perfect steak every time.
-      </video:description>
-    </video:video>
-    -->
-
-    <!-- News Example -->
-
   </url>
-</urlset>
 
-<!-- Services -->
-<!-- About Us -->
-<!-- Contact -->
-<!-- Clients -->
+  <!-- Services -->
+    <url>
+      <loc>http://www.rmlmontana.com/services.html</loc>
+      <!-- Hero -->
+      <image:image>
+        <image:loc>http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
+        <image:caption>RML Rocky Mountain Line Logo</image:caption>
+      </image:image>
+      <image:image>
+         <image:loc>http://rmlmontana.com/images/work-images/RML-15.jpg</image:loc>
+         <image:caption>Spools of fiber used by RML to connect western Montana</image:caption>
+      </image:image>
+      <image:image>
+         <image:loc>http://rmlmontana.com/images/headers/rml-services-header-mobile.jpg</image:loc>
+         <image:caption>Spools of fiber used by RML to connect western Montana</image:caption>
+      </image:image>
+      <image:image>
+         <image:loc>#</image:loc>
+         <image:caption>Desc</image:caption>
+      </image:image>
+
+      <!-- Services SVG -->
+      <image:image>
+         <image:loc>http://rmlmontana.com/images/rml-icons/trenchless_technology.svg</image:loc>
+         <image:caption>Trenchless Technology</image:caption>
+      </image:image>
+      <image:image>
+         <image:loc>http://rmlmontana.com/images/rml-icons/utility_installation.svg</image:loc>
+         <image:caption>Utility Installation</image:caption>
+      </image:image>
+      <image:image>
+         <image:loc>http://rmlmontana.com/images/rml-icons/Main-Line-End-Service-Installation.svg</image:loc>
+         <image:caption>Main Line Install</image:caption>
+      </image:image>
+      <image:image>
+         <image:loc>http://rmlmontana.com/images/rml-icons/Curb-to-Home.svg</image:loc>
+         <image:caption>Service Installation</image:caption>
+      </image:image>
+      <!-- Service Images -->
+      <image:image>
+         <image:loc>http://rmlmontana.com/images/work-images/RML-23.jpg</image:loc>
+         <image:caption>Trenchless Technology: Rocky Mountain Line is an industry leader in a rapidly growing sector of High Density Directional Drilling requiring no, or few continuous trenches.</image:caption>
+      </image:image>
+      <image:image>
+         <image:loc>http://rmlmontana.com/images/work-images/RML-24.jpg</image:loc>
+         <image:caption>Utility Installation: RML specializes in installing all Main Line/Services Utilities for private and public customers. These services include power, fiber, cable, water, gas, sewer, phone, &amp; sprinklers.</image:caption>
+      </image:image>
+      <image:image>
+         <image:loc>http://rmlmontana.com/images/work-images/rml-main-line-install-clark.jpg</image:loc>
+         <image:caption>Main Line Install: RML installs all types of utility Main Lines: power, water, sewer, phone, fiber, cable &amp; gas.</image:caption>
+      </image:image>
+      <image:image>
+         <image:loc>http://rmlmontana.com/images/work-images/RML-Worker-Seth-Curb-to-home.jpg</image:loc>
+         <image:caption>Service Installation: RML provides all Curb to Home	installations.</image:caption>
+      </image:image>
+
+    </url>
+
+    <!-- About Us -->
+      <url>
+        <loc>http://www.rmlmontana.com/about.html</loc>
+      </url>
+
+    <!-- Clients -->
+      <url>
+        <loc>http://www.rmlmontana.com/clients.html</loc>
+      </url>
+
+    <!-- Contact -->
+      <url>
+        <loc>http://www.rmlmontana.com/contact.html</loc>
+      </url>
+
+
+</urlset>
