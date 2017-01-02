@@ -6,7 +6,6 @@
 <!-- Main -->
   <url>
     <loc>http://rmlmontana.com/</loc>
-    <lastmod>2017-1-02T10:28:32+00:00</lastmod>
   </url>
 
 <!-- Index -->
@@ -112,10 +111,7 @@
          <image:loc>http://rmlmontana.com/images/headers/rml-services-header-mobile.jpg</image:loc>
          <image:caption>Spools of fiber used by RML to connect western Montana</image:caption>
       </image:image>
-      <image:image>
-         <image:loc>#</image:loc>
-         <image:caption>Desc</image:caption>
-      </image:image>
+
 
       <!-- Services SVG -->
       <image:image>
@@ -215,7 +211,7 @@
 
     <!-- Contact -->
       <url>
-        <loc>http://rmlmontana.com//contact.html</loc>
+        <loc>http://rmlmontana.com/contact.html</loc>
         <image:image>
           <image:loc>http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
           <image:caption>RML Rocky Mountain Line Logo</image:caption>
