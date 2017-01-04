@@ -76,9 +76,9 @@
 				<div class="container">
 					<div class="nav-header">
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="http://rmlmontana.com/index.html">
-							<img src="http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo_sm.svg" alt="RML: Rocky Mountain Line" width="60" border="0"></a>
-						</h1>
+						<span id="fh5co-logo"><a href="http://rmlmontana.com/index.html">
+							<img src="http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo_sm.svg" alt="RML Inc.: Rocky Mountain Line Logo" width="60" border="0"></a>
+						</span>
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
 									<li>
@@ -151,19 +151,28 @@
 						<p class="formspree-copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
 					</form>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" itemscope itemtype="http://schema.org/LocalBusiness">
 					<h3 class="section-title">Need a job done? We want to help!</h3>
 					<ul class="contact-info">
-						<li><i class="icon-location-pin"></i>12150 Pulp Mill Rd Missoula, MT. 59808</li>
-						<li><i class="icon-phone2"></i><a href="tel:+4065468881">(406) 546-8881</a></li>
-						<li><i class="icon-printer2"></i><a href="tel:+4065499224">(406) 549-9224</a></li>
+						<li><i class="icon-location-pin"></i>
+							<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+								<span itemprop="streetAddress">12150 Pulp Mill Rd</span>
+								<span itemprop="addressLocality">Missoula</span>,
+								<span itemprop="addressRegion">MT</span>.
+								<span itemprop="postalCode">59808</span>
+							</span>
+						</li>
+						<li><i class="icon-phone2"></i><span itemprop="telephone"><a href="tel:+4065468881">(406) 546-8881</a></span></li>
+						<li><i class="icon-printer2"></i><span itemprop="faxNumber"><a href="tel:+4065499224">(406) 549-9224</a></span></li>
 
 						<li><i class="icon-mail"></i>
-							<script type="text/javascript">
-								document.write("<a href=\"mail" + "to:" + new Array("matt","rmlmontana.com").join("@") + "\">" + "matt@rmlmontana.com" + "</" + "a>");
-							</script></span>
+							<span itemprop="email">
+								<script type="text/javascript">
+									document.write("<a href=\"mail" + "to:" + new Array("matt","rmlmontana.com").join("@") + "\">" + "matt@rmlmontana.com" + "</" + "a>");
+								</script></span>
+							</span>
 						</li>
-						<li><i class="icon-globe2"></i><a href="www.rmlmontana.com">www.rmlmontana.com</a></li>
+						<li><i class="icon-globe2"></i><span itemprop="url"<a href="http://rmlmontana.com">www.rmlmontana.com</a></span></li>
 					</ul>
 				</div>
 			</div>
@@ -186,19 +195,27 @@
 			<div class="row">
 				<div class="col-md-6">
 
-					<div class="rml-footer-contact">
+					<div class="rml-footer-contact itemscope itemtype="http://schema.org/LocalBusiness"">
 						<h3>Contact Information</h3>
 						<ul class="contact-info">
-							<li><i class="icon-location-pin" style="padding-right: 12px;"></i>12150 Pulp Mill Rd Missoula, MT. 59808</li>
-							<li><i class="icon-phone2" style="padding-right: 12px;"></i><a href="tel:+4065468881">(406) 546-8881</a></li>
-							<li><i class="icon-printer2" style="padding-right: 12px;"></i><a href="tel:+4065499224">(406) 549-9224</a></li>
+							<li><i class="icon-location-pin" style="padding-right: 12px;"></i>
+								<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									<span itemprop="streetAddress">12150 Pulp Mill Rd</span>
+									<span itemprop="addressLocality">Missoula</span>,
+									<span itemprop="addressRegion">MT</span>.
+									<span itemprop="postalCode">59808</span>
+								</span>
+							</li>
+							<li><i class="icon-phone2" style="padding-right: 12px;"></i><span itemprop="telephone"><a href="tel:+4065468881">(406) 546-8881</a></span></li>
+							<li><i class="icon-printer2" style="padding-right: 12px;"></i><span itemprop="telephone"><a href="tel:+4065499224">(406) 549-9224</a></span></li>
 							<li><i class="icon-mail" style="padding-right: 8px;"></i>
-								<script type="text/javascript">
-									document.write("<a href=\"mail" + "to:" + new Array("matt","rmlmontana.com").join("@") + "\">" + "matt@rmlmontana.com" + "</" + "a>");
-								</script>
-							</span>
+								<span itemprop="email">
+									<script type="text/javascript">
+										document.write("<a href=\"mail" + "to:" + new Array("matt","rmlmontana.com").join("@") + "\">" + "matt@rmlmontana.com" + "</" + "a>");
+									</script></span>
+								</span>
 						</li>
-							<li><i class="icon-globe2" style="padding-right: 12px;"></i><a href="http://rmlmontana.com">www.rmlmontana.com</a></li>
+							<li><i class="icon-globe2" style="padding-right: 12px;"></i><span itemprop="url"<a href="http://rmlmontana.com">www.rmlmontana.com</a></span></li>
 						</ul>
 					</div>
 

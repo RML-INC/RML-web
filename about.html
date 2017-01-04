@@ -83,9 +83,9 @@
 			<div class="container">
 				<div class="nav-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-					<h1 id="fh5co-logo"><a href="http://rmlmontana.com/index.html">
-						<img src="http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo_sm.svg" alt="RML: Rocky Mountain Line" width="60" border="0"></a>
-					</h1>
+					<span id="fh5co-logo"><a href="http://rmlmontana.com/index.html">
+						<img src="http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo_sm.svg" alt="RML Inc.: Rocky Mountain Line Logo" width="60" border="0"></a>
+					</span>
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
 								<li>
@@ -238,7 +238,7 @@
   			<div class="container">
   				<div class="row">
   					<div class="col-md-8 col-md-offset-2 text-center heading-section">
-  						<h3>About Us</h3>
+  						<h1>About Us</h1>
   						<p>RML (Rock Mountain Line) is a family run business based out of Missoula, MT.  Founded in 1999, RML prides itself on exceeding customer's expectations.  Clark (Matt's Dad), and Seth (Matt's brother), play a crucial role on site each and every day while Stacie (Matt's wife) keeps the business running smoothly in the office.  Although RML is contracted out by some of the largest utility companies in western Montana, barely a day goes by where you won’t see Matt down in the trenches with his fellow employees.</p>
   					</div>
   				</div>
@@ -322,17 +322,23 @@
 
 					<div class="rml-footer-contact">
 						<h3>Contact Information</h3>
-						<ul class="contact-info">
-							<li><i class="icon-location-pin" style="padding-right: 12px;"></i>12150 Pulp Mill Rd Missoula, MT. 59808</li>
-							<li><i class="icon-phone2" style="padding-right: 12px;"></i><a href="tel:+4065468881">(406) 546-8881</a></li>
-							<li><i class="icon-printer2" style="padding-right: 12px;"></i><a href="tel:+4065499224">(406) 549-9224</a></li>
+						<ul class="contact-info" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+							<li><i class="icon-location-pin" style="padding-right: 12px;"></i>
+								<span itemprop="streetAddress">12150 Pulp Mill Rd</span>
+								<span itemprop="addressLocality">Missoula</span>,
+								<span itemprop="addressRegion">MT</span>.
+								<span itemprop="postalCode">59808</span>
+							</li>
+							<li><i class="icon-phone2" style="padding-right: 12px;"></i><span itemprop="telephone"><a href="tel:+4065468881">(406) 546-8881</a></span></li>
+							<li><i class="icon-printer2" style="padding-right: 12px;"></i><span itemprop="telephone"><a href="tel:+4065499224">(406) 549-9224</a></span></li>
 							<li><i class="icon-mail" style="padding-right: 8px;"></i>
-								<script type="text/javascript">
-									document.write("<a href=\"mail" + "to:" + new Array("matt","rmlmontana.com").join("@") + "\">" + "matt@rmlmontana.com" + "</" + "a>");
-								</script>
-							</span>
+								<span itemprop="email">
+									<script type="text/javascript">
+										document.write("<a href=\"mail" + "to:" + new Array("matt","rmlmontana.com").join("@") + "\">" + "matt@rmlmontana.com" + "</" + "a>");
+									</script></span>
+								</span>
 						</li>
-							<li><i class="icon-globe2" style="padding-right: 12px;"></i><a href="http://rmlmontana.com">www.rmlmontana.com</a></li>
+							<li><i class="icon-globe2" style="padding-right: 12px;"></i><span itemprop="url"<a href="http://rmlmontana.com">www.rmlmontana.com</a></span></li>
 						</ul>
 					</div>
 
