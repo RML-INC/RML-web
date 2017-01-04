@@ -70,7 +70,7 @@
 </head>
 <body>
 	<div id="fh5co-wrapper">
-	<div id="fh5co-page">
+	<div id="fh5co-page" itemscope itemtype="http://schema.org/LocalBusiness">
 		<div id="fh5co-header">
 			<header id="fh5co-header-section">
 				<div class="container">
@@ -96,19 +96,21 @@
 		</div>
 
 <div class="rml-desktop">
+	<span itemprop="image">
 	<div class="fh5co-parallax" style="background-image: url(http://rmlmontana.com/images/headers/rml-matt-seth-close-up.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
-					<div class="fh5co-intro fh5co-table-cell">
-						<h1 class="text-center">Contact Us</h1>
-						<p>We'd love to hear from you!</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+						<div class="fh5co-intro fh5co-table-cell">
+							<h1 class="text-center">Contact Us</h1>
+							<p>We'd love to hear from you!</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</span>
 </div>
 
 <div class="rml-mobile-only">
@@ -127,12 +129,12 @@
 	</div>
 </div>
 
-	<div id="fh5co-contact" class="">
+	<div id="fh5co-contact" >
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
 					<form id="contact" action="http://formspree.io/matt@rmlmontana.com" method="post">
-						<h3>Contact RML</h3>
+						<h3>Contact <span itemprop="name">RML Inc.</span></h3>
 						<fieldset>
 							<input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus>
 						</fieldset>
@@ -151,7 +153,7 @@
 						<p class="formspree-copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
 					</form>
 				</div>
-				<div class="col-md-6" itemscope itemtype="http://schema.org/LocalBusiness">
+				<div class="col-md-6">
 					<h3 class="section-title">Need a job done? We want to help!</h3>
 					<ul class="contact-info">
 						<li><i class="icon-location-pin"></i>
