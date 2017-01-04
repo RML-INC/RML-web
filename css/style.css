@@ -7165,6 +7165,9 @@ input[type="text"] {
     text-transform: uppercase;
     font-weight: 300; }
 
+.contact-address-logo {
+  margin-bottom: 16px; }
+
 .googleplus-color {
   color: #dc4e41 !important; }
 
