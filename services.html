@@ -59,7 +59,7 @@
 
 </head>
 <body>
-	<div id="fh5co-wrapper">
+	<div id="fh5co-wrapper"  itemscope itemtype="http://schema.org/LocalBusiness">
 	<div id="fh5co-page">
 		<div id="fh5co-header">
 			<header id="fh5co-header-section">
@@ -354,7 +354,9 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1 id="fh5co-logo"><a href="http://rmlmontana.com/index.html">
-						<img src="http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo_sm.svg" alt="RML: Rocky Mountain Line Logo" width="60" border="0"></a>
+						<span itemprop="image">
+							<img src="http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo_sm.svg" alt="RML: Rocky Mountain Line Logo" width="60" border="0"></a>
+						</span>
 					</h1>
 				</div>
 			</div>
@@ -362,13 +364,15 @@
 				<div class="col-md-6">
 
 					<div class="rml-footer-contact">
-						<h3>Contact Information</h3>
-						<ul class="contact-info" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+						<h3><span itemprop="name">RML Inc.</span> Contact Information</h3>
+						<ul class="contact-info">
 							<li><i class="icon-location-pin" style="padding-right: 12px;"></i>
-								<span itemprop="streetAddress">12150 Pulp Mill Rd</span>
-								<span itemprop="addressLocality">Missoula</span>,
-								<span itemprop="addressRegion">MT</span>.
-								<span itemprop="postalCode">59808</span>
+								<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									<span itemprop="streetAddress">12150 Pulp Mill Rd</span>
+									<span itemprop="addressLocality">Missoula</span>,
+									<span itemprop="addressRegion">MT</span>.
+									<span itemprop="postalCode">59808</span>
+								</span>
 							</li>
 							<li><i class="icon-phone2" style="padding-right: 12px;"></i><span itemprop="telephone"><a href="tel:+4065468881">(406) 546-8881</a></span></li>
 							<li><i class="icon-printer2" style="padding-right: 12px;"></i><span itemprop="telephone"><a href="tel:+4065499224">(406) 549-9224</a></span></li>
@@ -379,7 +383,7 @@
 									</script></span>
 								</span>
 						</li>
-							<li><i class="icon-globe2" style="padding-right: 12px;"></i><span itemprop="url"<a href="http://rmlmontana.com">www.rmlmontana.com</a></span></li>
+							<li><i class="icon-globe2" style="padding-right: 12px;"></i><span itemprop="url"><a href="http://rmlmontana.com">www.rmlmontana.com</a></span></li>
 						</ul>
 					</div>
 
