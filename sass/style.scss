@@ -183,6 +183,7 @@ figure {
 }
 
 .rml-img {
+  border: 0;
   @include border-radius(5px);
 }
 // Buttons
@@ -396,7 +397,8 @@ figure {
   float: left;
   width: 100%;
 }
-#fh5co-logo{
+#fh5co-logo,
+#fh5co-logo-2{
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 300;
@@ -664,7 +666,8 @@ li{
 
 
 //fh5co-hero
-#fh5co-hero {
+#fh5co-hero,
+#fh5c0-hero-mobile {
   margin-bottom: 0;
   // min-height: 700px;
   background: $brand-white url(../images/loader.gif) no-repeat center center;
@@ -688,6 +691,7 @@ li{
       overflow: hidden;
       img{
         height: 300px;
+        border: 0;
         @media screen and (max-width: $screen-sm) {
           margin-top: -160px;
           height: 200px;
@@ -1456,6 +1460,7 @@ div.cs-select{
     }
   }
   img {
+    border: 0;
     margin-bottom: 24px;
   }
   .heading-section{
@@ -2153,12 +2158,13 @@ box-shadow: 0px 17px 56px -25px rgba(0,0,0,0.75);
     }
 }
 .index-logo {
-    text-align: center;
-    padding: 100px 0 40px 0;
+  text-align: center;
+  padding: 100px 0 40px 0;
 }
 .index-logo img {
-    width: 80%;
-    max-width: 800px;
+  border: 0;
+  width: 80%;
+  max-width: 800px;
 }
 .light {
     font-weight: 100;

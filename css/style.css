@@ -5889,6 +5889,7 @@ figure {
   background: #FABD15; }
 
 .rml-img {
+  border: 0;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -6079,26 +6080,32 @@ figure {
   float: left;
   width: 100%; }
 
-#fh5co-logo {
+#fh5co-logo,
+#fh5co-logo-2 {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 300;
   float: left;
   margin-bottom: 1.2em;
   margin-top: 1.2em; }
-  #fh5co-logo a {
+  #fh5co-logo a,
+  #fh5co-logo-2 a {
     color: white;
     position: relative;
     text-decoration: none; }
-    #fh5co-logo a:hover, #fh5co-logo a:focus {
+    #fh5co-logo a:hover, #fh5co-logo a:focus,
+    #fh5co-logo-2 a:hover,
+    #fh5co-logo-2 a:focus {
       color: rgba(255, 255, 255, 0.9) !important;
       text-decoration: none; }
-  #fh5co-logo span {
+  #fh5co-logo span,
+  #fh5co-logo-2 span {
     padding: 0;
     margin: 0;
     font-weight: 100; }
   @media screen and (max-width: 768px) {
-    #fh5co-logo {
+    #fh5co-logo,
+    #fh5co-logo-2 {
       width: 100%;
       float: none;
       margin-top: -4px; } }
@@ -6305,7 +6312,8 @@ li {
     color: #f8e69f !important;
     background: none !important; }
 
-#fh5co-hero {
+#fh5co-hero,
+#fh5c0-hero-mobile {
   margin-bottom: 0;
   background: #fff url(../images/loader.gif) no-repeat center center;
   margin-bottom: 0 !important;
@@ -6318,34 +6326,44 @@ li {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap; }
-  #fh5co-hero .btn {
+  #fh5co-hero .btn,
+  #fh5c0-hero-mobile .btn {
     font-size: 24px; }
-    #fh5co-hero .btn.btn-primary {
+    #fh5co-hero .btn.btn-primary,
+    #fh5c0-hero-mobile .btn.btn-primary {
       padding: 14px 30px !important; }
-  #fh5co-hero .flexslider {
+  #fh5co-hero .flexslider,
+  #fh5c0-hero-mobile .flexslider {
     border: none;
     z-index: 1;
     margin-bottom: 0; }
-    #fh5co-hero .flexslider .slides {
+    #fh5co-hero .flexslider .slides,
+    #fh5c0-hero-mobile .flexslider .slides {
       position: relative;
       overflow: hidden; }
-      #fh5co-hero .flexslider .slides img {
-        height: 300px; }
+      #fh5co-hero .flexslider .slides img,
+      #fh5c0-hero-mobile .flexslider .slides img {
+        height: 300px;
+        border: 0; }
         @media screen and (max-width: 768px) {
-          #fh5co-hero .flexslider .slides img {
+          #fh5co-hero .flexslider .slides img,
+          #fh5c0-hero-mobile .flexslider .slides img {
             margin-top: -160px;
             height: 200px; } }
-      #fh5co-hero .flexslider .slides li {
+      #fh5co-hero .flexslider .slides li,
+      #fh5c0-hero-mobile .flexslider .slides li {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         min-height: 700px;
         position: relative; }
         @media screen and (max-width: 768px) {
-          #fh5co-hero .flexslider .slides li {
+          #fh5co-hero .flexslider .slides li,
+          #fh5c0-hero-mobile .flexslider .slides li {
             height: 500px;
             min-height: 500px; } }
-        #fh5co-hero .flexslider .slides li:after {
+        #fh5co-hero .flexslider .slides li:after,
+        #fh5c0-hero-mobile .flexslider .slides li:after {
           position: absolute;
           top: 0;
           bottom: 0;
@@ -6354,17 +6372,20 @@ li {
           content: '';
           background: rgba(0, 0, 0, 0.4);
           z-index: 1; }
-    #fh5co-hero .flexslider .flex-control-nav {
+    #fh5co-hero .flexslider .flex-control-nav,
+    #fh5c0-hero-mobile .flexslider .flex-control-nav {
       bottom: 60px;
       z-index: 1000;
       right: 20px;
       width: 25px;
       float: right; }
-      #fh5co-hero .flexslider .flex-control-nav li {
+      #fh5co-hero .flexslider .flex-control-nav li,
+      #fh5c0-hero-mobile .flexslider .flex-control-nav li {
         display: block !important;
         margin-bottom: 20px;
         float: right; }
-        #fh5co-hero .flexslider .flex-control-nav li a {
+        #fh5co-hero .flexslider .flex-control-nav li a,
+        #fh5c0-hero-mobile .flexslider .flex-control-nav li a {
           display: block !important;
           background: rgba(255, 255, 255, 0.4);
           box-shadow: none;
@@ -6372,14 +6393,18 @@ li {
           height: 12px;
           cursor: pointer;
           border: 2px solid transparent; }
-          #fh5co-hero .flexslider .flex-control-nav li a:active, #fh5co-hero .flexslider .flex-control-nav li a:focus {
+          #fh5co-hero .flexslider .flex-control-nav li a:active, #fh5co-hero .flexslider .flex-control-nav li a:focus,
+          #fh5c0-hero-mobile .flexslider .flex-control-nav li a:active,
+          #fh5c0-hero-mobile .flexslider .flex-control-nav li a:focus {
             outline: none;
             border: 2px solid white !important; }
-          #fh5co-hero .flexslider .flex-control-nav li a.flex-active {
+          #fh5co-hero .flexslider .flex-control-nav li a.flex-active,
+          #fh5c0-hero-mobile .flexslider .flex-control-nav li a.flex-active {
             cursor: pointer;
             border: 2px solid white;
             background: transparent; }
-    #fh5co-hero .flexslider .flex-direction-nav {
+    #fh5co-hero .flexslider .flex-direction-nav,
+    #fh5c0-hero-mobile .flexslider .flex-direction-nav {
       display: none; }
 
 .slider-text {
@@ -6965,6 +6990,7 @@ div.cs-select span {
     #fh5co-blog-section p {
       margin-bottom: 40px; } }
   #fh5co-blog-section img {
+    border: 0;
     margin-bottom: 24px; }
   #fh5co-blog-section .heading-section {
     margin-bottom: 0px; }
@@ -7520,6 +7546,7 @@ input[type="text"] {
   padding: 100px 0 40px 0; }
 
 .index-logo img {
+  border: 0;
   width: 80%;
   max-width: 800px; }
 
