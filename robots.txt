@@ -5,11 +5,11 @@ Allow: /services.html
 Allow: /about.html
 Allow: /contact.html
 Allow: /clients.html
+Allow: /images/
 Disallow: /css/
 Disallow: /js/
 Disallow: /.sass-cashe/
 Disallow: /fonts/
-Disallow: /images/
 Disallow: /sass/
 Disallow: /.DS_Store
 Disallow: /old_index.html
