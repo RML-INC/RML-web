@@ -103,11 +103,11 @@
 		</header>
 	</div>	<!-- end:fh5co-header -->
 
-	<div class="rml-desktop">
+	<div class="flexslider-box">
 	<aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(http://rmlmontana.com/images/work-images/rml-serving-western-montana.jpg);">
+		   	<li class="mobile-image-change" style="background-image: url(http://rmlmontana.com/images/work-images/rml-serving-western-montana.jpg);">
 				<meta itemprop="image" content="http://rmlmontana.com/images/work-images/rml-serving-western-montana.jpg">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
@@ -160,65 +160,6 @@
 	  	</ul>
   	</div>
 	</aside>
-</div>
-
-<!-- MOBILE ONLY -->
-<div class="rml-mobile-only">
-<aside id="fh5co-hero-2" class="js-fullheight">
-	<div class="flexslider js-fullheight">
-		<ul class="slides">
-			<li style="background-image: url(http://rmlmontana.com/images/work-images/rml-serving-western-montana-mobile.jpg);">
-				<div class="overlay-gradient"></div>
-				<div class="container">
-					<div class="col-md-12 col-md-offset-0 text-center slider-text">
-						<div class="slider-text-inner js-fullheight">
-							<div class="desc">
-								<p><span>RML &#124; Rocky Mountain Line</span></p>
-								<h2>Serving Western Montana and surrounding areas since 1999.</h2>
-								<p>
-									<a href="http://rmlmontana.com/contact.html" class="btn btn-primary btn-lg">Contact Us</a>
-								</p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</li>
-			<li style="background-image: url(http://rmlmontana.com/images/headers/rml-about-us-seth-mobile.jpg);">
-				<div class="overlay-gradient"></div>
-				<div class="container">
-					<div class="col-md-12 col-md-offset-0 text-center slider-text">
-						<div class="slider-text-inner js-fullheight">
-							<div class="desc">
-								<p><span>Family-Run</span></p>
-								<h2>Keeping the American Dream alive.</h2>
-								<p>
-									<a href="http://rmlmontana.com/contact.html" class="btn btn-primary btn-lg">Contact Us</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</li>
-			<li style="background-image: url(http://rmlmontana.com/images/work-images/RML_day2-29.jpg);">
-				<div class="overlay-gradient"></div>
-				<div class="container">
-					<div class="col-md-12 col-md-offset-0 text-center slider-text">
-						<div class="slider-text-inner js-fullheight">
-							<div class="desc">
-								<p><span>Hard Work</span></p>
-								<h2>Getting the job done, no matter what.</h2>
-								<p>
-									<a href="http://rmlmontana.com/contact.html" class="btn btn-primary btn-lg">Contact Us</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-</aside>
 </div>
 
 	<div class="wrap">
@@ -426,6 +367,24 @@
 	<script src="http://rmlmontana.com/js/jquery.flexslider-min.js"></script>
 
 	<script src="http://rmlmontana.com/js/custom.js"></script>
+
+	<script>
+	$(document).ready(function() {
+		if($(window).width() <= 710) {
+			$(".flexslider li.mobile-image-change").each(function() {
+				$(this).attr("style", $(this).attr("style").replace(".jpg", "-mobile.jpg"))
+			});
+		};
+	});
+
+	$(window).resize(function() {
+		if($(window).width() <= 710) {
+			$(".flexslider li.mobile-image-change").each(function() {
+				$(this).attr("style", $(this).attr("style").replace(".jpg", "-mobile.jpg"))
+			});
+		};
+	});
+	</script>
 
 </body>
 </html>
