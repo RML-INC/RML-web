@@ -370,7 +370,7 @@
 
 	<script>
 	$(document).ready(function() {
-		if($(window).width() <= 710) {
+		if($(window).width() <= 510) {
 			$(".flexslider li.mobile-image-change").each(function() {
 				$(this).attr("style", $(this).attr("style").replace(".jpg", "-mobile.jpg"))
 			});
@@ -378,7 +378,7 @@
 	});
 
 	$(window).resize(function() {
-		if($(window).width() <= 710) {
+		if($(window).width() <= 510) {
 			$(".flexslider li.mobile-image-change").each(function() {
 				$(this).attr("style", $(this).attr("style").replace(".jpg", "-mobile.jpg"))
 			});
