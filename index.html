@@ -134,7 +134,7 @@
 				   			</div>
 				   		</div>
 				   	</li>
-				   	<li style="background-image: url(http://rmlmontana.com/images/headers/RML-Worker-Seth-Curb-to-home.jpg);">
+				   	<li class="mobile-image-change" style="background-image: url(http://rmlmontana.com/images/headers/RML-Worker-Seth-Curb-to-home.jpg);">
 				   		<div class="overlay-gradient"></div>
 				   		<div class="container">
 				   			<div class="col-md-12 col-md-offset-0 text-center slider-text">
@@ -504,6 +504,11 @@
 			if($(window).width() <= 510) {
 				$(".flexslider li.mobile-image-change").each(function() {
 					$(this).attr("style", $(this).attr("style").replace(".jpg", "-mobile.jpg"))
+				});
+			};
+			if($(window).width() > 510) {
+				$(".flexslider li.mobile-image-change").each(function() {
+					$(this).attr("style", $(this).attr("style").replace("-mobile.jpg", ".jpg"))
 				});
 			};
 		});
