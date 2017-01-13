@@ -107,8 +107,8 @@
 	<aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li class="mobile-image-change" style="background-image: url(http://rmlmontana.com/images/work-images/rml-serving-western-montana.jpg);">
-				<meta itemprop="image" content="http://rmlmontana.com/images/work-images/rml-serving-western-montana.jpg">
+		   	<li class="mobile-image-change" style="background-image: url(http://rmlmontana.com/images/work-images/rml-serving-western-montana-full.jpg);">
+				<meta itemprop="image" content="http://rmlmontana.com/images/work-images/rml-serving-western-montana-full.jpg">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="col-md-12 col-md-offset-0 text-center slider-text">
@@ -372,7 +372,7 @@
 	$(document).ready(function() {
 		if($(window).width() <= 510) {
 			$(".flexslider li.mobile-image-change").each(function() {
-				$(this).attr("style", $(this).attr("style").replace(".jpg", "-mobile.jpg"))
+				$(this).attr("style", $(this).attr("style").replace("-full.jpg", "-mobile.jpg"))
 			});
 		};
 	});
@@ -380,12 +380,12 @@
 	$(window).resize(function() {
 		if($(window).width() <= 510) {
 			$(".flexslider li.mobile-image-change").each(function() {
-				$(this).attr("style", $(this).attr("style").replace(".jpg", "-mobile.jpg"))
+				$(this).attr("style", $(this).attr("style").replace("-full.jpg", "-mobile.jpg"))
 			});
 		};
 		if($(window).width() > 510) {
 			$(".flexslider li.mobile-image-change").each(function() {
-				$(this).attr("style", $(this).attr("style").replace("-mobile.jpg", ".jpg"))
+				$(this).attr("style", $(this).attr("style").replace("-mobile.jpg", "-full.jpg"))
 			});
 		};
 	});
