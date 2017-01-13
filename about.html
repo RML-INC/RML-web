@@ -383,6 +383,11 @@
 				$(this).attr("style", $(this).attr("style").replace(".jpg", "-mobile.jpg"))
 			});
 		};
+		if($(window).width() > 510) {
+			$(".flexslider li.mobile-image-change").each(function() {
+				$(this).attr("style", $(this).attr("style").replace("-mobile.jpg", ".jpg"))
+			});
+		};
 	});
 	</script>
 
