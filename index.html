@@ -100,11 +100,11 @@
 
 
 		<!-- RML DESKTOP SLIDER -->
-		<div class="rml-desktop">
+		<div class="flexslider-box">
 			<aside id="fh5co-hero" class="js-fullheight">
 				<div class="flexslider js-fullheight">
 					<ul class="slides">
-				   <li style="background-image: url(http://rmlmontana.com/images/headers/rml-matt-anderson-owner.jpg);">
+				   <li class="mobile-image-change" style="background-image: url(http://rmlmontana.com/images/headers/rml-matt-anderson-owner.jpg);">
 						 <meta itemprop="image" content="http://rmlmontana.com/images/headers/rml-matt-anderson-owner.jpg">
 				   		<div class="overlay-gradient"></div>
 				   		<div class="container">
@@ -134,7 +134,7 @@
 				   			</div>
 				   		</div>
 				   	</li>
-				   	<li style="background-image: url(http://rmlmontana.com/images/headers/RML-Worker-Seth-Curb-to-home.jpg);">
+				   	<li class="mobile-image-change" style="background-image: url(http://rmlmontana.com/images/headers/RML-Worker-Seth-Curb-to-home.jpg);">
 				   		<div class="overlay-gradient"></div>
 				   		<div class="container">
 				   			<div class="col-md-12 col-md-offset-0 text-center slider-text">
@@ -155,60 +155,6 @@
 			</aside>
 		</div><!-- /rml-desktop -->
 
-		<!-- MOBILE ONLY -->
-		<div class="rml-mobile-only">
-			<aside id="fh5co-hero-mobile" class="js-fullheight">
-				<div class="flexslider js-fullheight">
-					<ul class="slides">
-						<li style="background-image: url(http://rmlmontana.com/images/headers/rml-matt-anderson-owner-phone.jpg);">
-							<div class="overlay-gradient"></div>
-							<div class="container">
-								<div class="col-md-12 col-md-offset-0 text-center slider-text">
-									<div class="slider-text-inner js-fullheight">
-										<div class="desc">
-											<span class= "hero-logo"><img src="http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg" alt="RML Inc: Rocky Mountain Line Logo" width="300"  ></span>
-												<a href="http://rmlmontana.com/contact.html" class="btn btn-primary btn-lg">Contact Us</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li style="background-image: url(http://rmlmontana.com/images/headers/working-with-the-customers-mobile.jpg);">
-							<div class="overlay-gradient"></div>
-							<div class="container">
-								<div class="col-md-12 col-md-offset-0 text-center slider-text">
-									<div class="slider-text-inner js-fullheight">
-										<div class="desc">
-											<p><span>Industry Leaders</span></p>
-											<h2>Utility Contracting &#124; HDD Drilling</h2>
-											<p>
-												<a href="http://rmlmontana.com/services.html" class="btn btn-primary btn-lg">Learn More</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li style="background-image: url(http://rmlmontana.com/images/headers/RML-Worker-Seth-Curb-to-home-phone.jpg);">
-							<div class="overlay-gradient"></div>
-							<div class="container">
-								<div class="col-md-12 col-md-offset-0 text-center slider-text">
-									<div class="slider-text-inner js-fullheight">
-										<div class="desc">
-											<p><span>Building Lasting Relationships</span></p>
-											<h2>Seventeen years of jobs well done, makes happy customers.</h2>
-											<p>
-												<a href="http://rmlmontana.com/clients.html" class="btn btn-primary btn-lg">Learn More</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</aside>
-		</div><!-- /rml-mobile only -->
 
 		<div class="wrap">
 			<div class="container">
@@ -544,6 +490,29 @@
 		<script src="http://rmlmontana.com/js/jquery.flexslider-min.js"></script>
 
 		<script src="http://rmlmontana.com/js/custom.js"></script>
+
+		<script>
+		$(document).ready(function() {
+			if($(window).width() <= 510) {
+				$(".flexslider li.mobile-image-change").each(function() {
+					$(this).attr("style", $(this).attr("style").replace(".jpg", "-mobile.jpg"))
+				});
+			};
+		});
+
+		$(window).resize(function() {
+			if($(window).width() <= 510) {
+				$(".flexslider li.mobile-image-change").each(function() {
+					$(this).attr("style", $(this).attr("style").replace(".jpg", "-mobile.jpg"))
+				});
+			};
+			if($(window).width() > 510) {
+				$(".flexslider li.mobile-image-change").each(function() {
+					$(this).attr("style", $(this).attr("style").replace("-mobile.jpg", ".jpg"))
+				});
+			};
+		});
+		</script>
 
 	</body>
 </html>
