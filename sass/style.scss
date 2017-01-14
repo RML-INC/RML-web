@@ -1179,8 +1179,25 @@ div.cs-select{
   padding: 7em 0;
 }
 
-#rml-services{
+#rml-services {
   padding-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  #about-us,
+  #fh5co-client-section,
+  #fh5co-client-section-1,
+  #what-others-are-saying,
+  #rml-services,
+  #testimonial,
+  #fh5co-blog-section,
+  #fh5co-hotel-section,
+  #fh5co-services-section,
+  #fh5co-contact-section,
+  #fh5co-content-section,
+  #fh5co-work-section {
+    padding: 4em 0;
+  }
 }
 
 // #rml-services {
