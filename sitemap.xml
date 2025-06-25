@@ -5,222 +5,222 @@
 
 <!-- Main -->
   <url>
-    <loc>http://rmlmontana.com/</loc>
+    <loc>https://rmlmontana.com/</loc>
   </url>
 
 <!-- Index -->
   <url>
-    <loc>http://rmlmontana.com//index.html</loc>
+    <loc>https://rmlmontana.com//index.html</loc>
 
     <!-- Images -->
     <!-- Hero Image -->
     <image:image>
-       <image:loc>http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
+       <image:loc>https://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
        <image:caption>RML Rocky Mountain Line Logo</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/headers/rml-matt-anderson-owner.jpg</image:loc>
+       <image:loc>https://rmlmontana.com/images/headers/rml-matt-anderson-owner.jpg</image:loc>
        <image:caption>Matt Anderson owner of RML Inc. - Rocky Mountain Line</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/headers/rml-matt-anderson-owner-phone.jpg</image:loc>
+       <image:loc>https://rmlmontana.com/images/headers/rml-matt-anderson-owner-phone.jpg</image:loc>
        <image:caption>Matt Anderson owner of RML Inc. - Rocky Mountain Line</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/headers/working-with-customers.jpg</image:loc>
+       <image:loc>https://rmlmontana.com/images/headers/working-with-customers.jpg</image:loc>
        <image:caption>RML working with its customers to lay fiber</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/headers/working-with-the-customers-mobile.jpg</image:loc>
+       <image:loc>https://rmlmontana.com/images/headers/working-with-the-customers-mobile.jpg</image:loc>
        <image:caption>RML working with its customers to lay fiber</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/headers/RML-Worker-Seth-Curb-to-home.jpg</image:loc>
+       <image:loc>https://rmlmontana.com/images/headers/RML-Worker-Seth-Curb-to-home.jpg</image:loc>
        <image:caption>Seth manager at RML working to install curb to home</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/headers/RML-Worker-Seth-Curb-to-home-phone.jpg</image:loc>
+       <image:loc>https://rmlmontana.com/images/headers/RML-Worker-Seth-Curb-to-home-phone.jpg</image:loc>
        <image:caption>Seth manager at RML working to install curb to home</image:caption>
     </image:image>
 
     <!-- About Images -->
     <image:image>
-       <image:loc>http://rmlmontana.com/images/work-images/rml-hands-at-work.jpg</image:loc>
+       <image:loc>https://rmlmontana.com/images/work-images/rml-hands-at-work.jpg</image:loc>
        <image:caption>RML is not afraid to get its hands dirty on any HDD, or trenchless project</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/work-images/rml-clark.jpg</image:loc>
+       <image:loc>https://rmlmontana.com/images/work-images/rml-clark.jpg</image:loc>
        <image:caption>Clark Anderson - foreman of RML</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/work-images/RML-15.jpg</image:loc>
+       <image:loc>https://rmlmontana.com/images/work-images/RML-15.jpg</image:loc>
        <image:caption>Spools of fiber used by RML to connect western Montana</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/work-images/rml-matt-and-seth.jpg</image:loc>
+       <image:loc>https://rmlmontana.com/images/work-images/rml-matt-and-seth.jpg</image:loc>
        <image:caption>Matt and Seth Anderson on the job.  RML a family business</image:caption>
     </image:image>
 
 
     <!-- Services -->
     <image:image>
-       <image:loc>http://rmlmontana.com/images/rml-icons/trenchless_technology.svg</image:loc>
+       <image:loc>https://rmlmontana.com/images/rml-icons/trenchless_technology.svg</image:loc>
        <image:caption>Trenchless Technology: Rocky Mountain Line is an industry leader in a rapidly growing sector of High Density Directional Drilling requiring no, or few continuous trenches.</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/rml-icons/utility_installation.svg</image:loc>
+       <image:loc>https://rmlmontana.com/images/rml-icons/utility_installation.svg</image:loc>
        <image:caption>Utility Installation: RML specializes in installing all Main Line/Services Utilities for private and public customers. These services include power, fiber, cable, water, gas, sewer, phone, &amp; sprinklers.</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/rml-icons/Main-Line-End-Service-Installation.svg</image:loc>
+       <image:loc>https://rmlmontana.com/images/rml-icons/Main-Line-End-Service-Installation.svg</image:loc>
        <image:caption>Main Line Install: RML installs all types of utility Main Lines: power, water, sewer, phone, fiber, cable &amp; gas.</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/rml-icons/Curb-to-Home.svg</image:loc>
+       <image:loc>https://rmlmontana.com/images/rml-icons/Curb-to-Home.svg</image:loc>
        <image:caption>Service Installation: RML provides all Curb to Home	installations.</image:caption>
     </image:image>
 
     <!-- Recent Projects -->
     <image:image>
-       <image:loc>http://rmlmontana.com/images/work-images/rml-cable-montana.jpg</image:loc>
+       <image:loc>https://rmlmontana.com/images/work-images/rml-cable-montana.jpg</image:loc>
        <image:caption>Fiber in Kalispell: RML completed 8 miles of fiber for Blackfoot Telephone Co-op  (BTC) in Kalispell, MT.</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/headers/rml-seth-anderson-running-equiptment-sm.jpg</image:loc>
+       <image:loc>https://rmlmontana.com/images/headers/rml-seth-anderson-running-equiptment-sm.jpg</image:loc>
        <image:caption>Fort Missoula Regional Park: RML completed work with Jacobson Electrical to plow in secondary electric lines for the Missoula Regional Park.</image:caption>
     </image:image>
     <image:image>
-       <image:loc>http://rmlmontana.com/images/work-images/rml-talking-with-clients.jpg</image:loc>
+       <image:loc>https://rmlmontana.com/images/work-images/rml-talking-with-clients.jpg</image:loc>
        <image:caption>School Fiber Install: RML is helping to install fiber in all High Schools, Middle Schools, &amp; Elementry Schools in the Blackfoot Telephone Co-op (BTC) service areas.</image:caption>
     </image:image>
   </url>
 
   <!-- Services -->
     <url>
-      <loc>http://rmlmontana.com//services.html</loc>
+      <loc>https://rmlmontana.com//services.html</loc>
       <!-- Hero -->
       <image:image>
-        <image:loc>http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
+        <image:loc>https://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
         <image:caption>RML Rocky Mountain Line Logo</image:caption>
       </image:image>
       <image:image>
-         <image:loc>http://rmlmontana.com/images/work-images/RML-15.jpg</image:loc>
+         <image:loc>https://rmlmontana.com/images/work-images/RML-15.jpg</image:loc>
          <image:caption>Spools of fiber used by RML to connect western Montana</image:caption>
       </image:image>
       <image:image>
-         <image:loc>http://rmlmontana.com/images/headers/rml-services-header-mobile.jpg</image:loc>
+         <image:loc>https://rmlmontana.com/images/headers/rml-services-header-mobile.jpg</image:loc>
          <image:caption>Spools of fiber used by RML to connect western Montana</image:caption>
       </image:image>
 
 
       <!-- Services SVG -->
       <image:image>
-         <image:loc>http://rmlmontana.com/images/rml-icons/trenchless_technology.svg</image:loc>
+         <image:loc>https://rmlmontana.com/images/rml-icons/trenchless_technology.svg</image:loc>
          <image:caption>Trenchless Technology</image:caption>
       </image:image>
       <image:image>
-         <image:loc>http://rmlmontana.com/images/rml-icons/utility_installation.svg</image:loc>
+         <image:loc>https://rmlmontana.com/images/rml-icons/utility_installation.svg</image:loc>
          <image:caption>Utility Installation</image:caption>
       </image:image>
       <image:image>
-         <image:loc>http://rmlmontana.com/images/rml-icons/Main-Line-End-Service-Installation.svg</image:loc>
+         <image:loc>https://rmlmontana.com/images/rml-icons/Main-Line-End-Service-Installation.svg</image:loc>
          <image:caption>Main Line Install</image:caption>
       </image:image>
       <image:image>
-         <image:loc>http://rmlmontana.com/images/rml-icons/Curb-to-Home.svg</image:loc>
+         <image:loc>https://rmlmontana.com/images/rml-icons/Curb-to-Home.svg</image:loc>
          <image:caption>Service Installation</image:caption>
       </image:image>
       <!-- Service Images -->
       <image:image>
-         <image:loc>http://rmlmontana.com/images/work-images/RML-23.jpg</image:loc>
+         <image:loc>https://rmlmontana.com/images/work-images/RML-23.jpg</image:loc>
          <image:caption>Trenchless Technology: Rocky Mountain Line is an industry leader in a rapidly growing sector of High Density Directional Drilling requiring no, or few continuous trenches.</image:caption>
       </image:image>
       <image:image>
-         <image:loc>http://rmlmontana.com/images/work-images/RML-24.jpg</image:loc>
+         <image:loc>https://rmlmontana.com/images/work-images/RML-24.jpg</image:loc>
          <image:caption>Utility Installation: RML specializes in installing all Main Line/Services Utilities for private and public customers. These services include power, fiber, cable, water, gas, sewer, phone, &amp; sprinklers.</image:caption>
       </image:image>
       <image:image>
-         <image:loc>http://rmlmontana.com/images/work-images/rml-main-line-install-clark.jpg</image:loc>
+         <image:loc>https://rmlmontana.com/images/work-images/rml-main-line-install-clark.jpg</image:loc>
          <image:caption>Main Line Install: RML installs all types of utility Main Lines: power, water, sewer, phone, fiber, cable &amp; gas.</image:caption>
       </image:image>
       <image:image>
-         <image:loc>http://rmlmontana.com/images/work-images/RML-Worker-Seth-Curb-to-home.jpg</image:loc>
+         <image:loc>https://rmlmontana.com/images/work-images/RML-Worker-Seth-Curb-to-home.jpg</image:loc>
          <image:caption>Service Installation: RML provides all Curb to Home	installations.</image:caption>
       </image:image>
     </url>
 
     <!-- About Us -->
       <url>
-        <loc>http://rmlmontana.com//about.html</loc>
+        <loc>https://rmlmontana.com//about.html</loc>
 
         <!-- Hero -->
         <image:image>
-          <image:loc>http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
+          <image:loc>https://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
           <image:caption>RML Rocky Mountain Line Logo</image:caption>
         </image:image>
         <image:image>
-           <image:loc>http://rmlmontana.com/images/work-images/rml-serving-western-montana.jpg</image:loc>
+           <image:loc>https://rmlmontana.com/images/work-images/rml-serving-western-montana.jpg</image:loc>
            <image:caption>Serving Western Montana for over 18 years</image:caption>
         </image:image>
         <image:image>
-           <image:loc>http://rmlmontana.com/images/headers/rml-about-us-seth-1.jpg</image:loc>
+           <image:loc>https://rmlmontana.com/images/headers/rml-about-us-seth-1.jpg</image:loc>
            <image:caption>Seth Anderson (Manager) Directing the crew</image:caption>
         </image:image>
         <image:image>
-           <image:loc>http://rmlmontana.com/images/work-images/RML_day2-29.jpg</image:loc>
+           <image:loc>https://rmlmontana.com/images/work-images/RML_day2-29.jpg</image:loc>
            <image:caption>RML Getting the job done, no matter what</image:caption>
         </image:image>
         <!-- Mobile -->
         <image:image>
-           <image:loc>http://rmlmontana.com/images/work-images/rml-serving-western-montana-mobile.jpg</image:loc>
+           <image:loc>https://rmlmontana.com/images/work-images/rml-serving-western-montana-mobile.jpg</image:loc>
            <image:caption>Serving Western Montana for over 18 years</image:caption>
         </image:image>
         <image:image>
-           <image:loc>http://rmlmontana.com/images/headers/rml-about-us-seth-mobile.jpg</image:loc>
+           <image:loc>https://rmlmontana.com/images/headers/rml-about-us-seth-mobile.jpg</image:loc>
            <image:caption>Seth Anderson (Manager) Directing the crew</image:caption>
         </image:image>
         <image:image>
-           <image:loc>http://rmlmontana.com/images/work-images/RML_day2-29.jpg</image:loc>
+           <image:loc>https://rmlmontana.com/images/work-images/RML_day2-29.jpg</image:loc>
            <image:caption>RML Getting the job done, no matter what</image:caption>
         </image:image>
 
         <image:image>
-           <image:loc>http://rmlmontana.com/images/work-images/rml-about-us-matt.jpg</image:loc>
+           <image:loc>https://rmlmontana.com/images/work-images/rml-about-us-matt.jpg</image:loc>
            <image:caption>RML (Rock Mountain Line) is a family run business based out of Missoula, MT.  Founded in 1999, RML prides itself on exceeding customer's expectations.</image:caption>
         </image:image>
       </url>
 
     <!-- Clients -->
       <url>
-        <loc>http://rmlmontana.com//clients.html</loc>
+        <loc>https://rmlmontana.com//clients.html</loc>
         <!-- Hero -->
         <image:image>
-          <image:loc>http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
+          <image:loc>https://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
           <image:caption>RML Rocky Mountain Line Logo</image:caption>
         </image:image>
         <image:image>
-           <image:loc>http://rmlmontana.com/images/work-images/RML_day2-36.jpg</image:loc>
+           <image:loc>https://rmlmontana.com/images/work-images/RML_day2-36.jpg</image:loc>
            <image:caption>Matt Anderson and his team working directly with clients to get the job done right</image:caption>
         </image:image>
         <image:image>
-           <image:loc>http://rmlmontana.com/images/work-images/RML_day2-36-mobile.jpg</image:loc>
+           <image:loc>https://rmlmontana.com/images/work-images/RML_day2-36-mobile.jpg</image:loc>
            <image:caption>Matt Anderson and his team working directly with clients to get the job done right</image:caption>
         </image:image>
       </url>
 
     <!-- Contact -->
       <url>
-        <loc>http://rmlmontana.com/contact.html</loc>
+        <loc>https://rmlmontana.com/contact.html</loc>
         <image:image>
-          <image:loc>http://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
+          <image:loc>https://rmlmontana.com/images/rml-logo/RML_Rocky_Mountain_Line_Logo.svg</image:loc>
           <image:caption>RML Rocky Mountain Line Logo</image:caption>
         </image:image>
         <image:image>
-           <image:loc>http://rmlmontana.com/images/headers/rml-matt-seth-close-up.jpg</image:loc>
+           <image:loc>https://rmlmontana.com/images/headers/rml-matt-seth-close-up.jpg</image:loc>
            <image:caption>Matt Anderson and his brother Seth Anderson show their exact personalites, they love to laugh and love to work hard, give them a call today</image:caption>
         </image:image>
         <image:image>
-           <image:loc>http://rmlmontana.com/images/headers/rml-contact-us-mobile.jpg</image:loc>
+           <image:loc>https://rmlmontana.com/images/headers/rml-contact-us-mobile.jpg</image:loc>
            <image:caption>Matt Anderson and his brother Seth Anderson show their exact personalites, they love to laugh and love to work hard, give them a call today</image:caption>
         </image:image>
       </url>
