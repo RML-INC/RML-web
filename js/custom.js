@@ -53,7 +53,9 @@ $(function(){
       $('#fh5co-page').prepend($clone);
 
       // click the burger
-      $('.js-fh5co-nav-toggle').on('click', function(){
+      $('.js-fh5co-nav-toggle').on('click touchstart', function(e){
+         e.preventDefault();
+         e.stopPropagation();
 
          if ( $('body').hasClass('fh5co-offcanvas') ) {
             $('body').removeClass('fh5co-offcanvas');
@@ -87,7 +89,7 @@ $(function(){
 
    // Click outside of the Mobile Menu
    var mobileMenuOutsideClick = function() {
-      $(document).click(function (e) {
+      $(document).on('click touchstart', function (e) {
        var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
        if (!container.is(e.target) && container.has(e.target).length === 0) {
          if ( $('body').hasClass('fh5co-offcanvas') ) {
