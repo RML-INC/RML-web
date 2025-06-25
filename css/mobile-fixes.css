@@ -24,7 +24,11 @@
     /* Remove any default button styling */
     background: transparent !important;
     border: none !important;
-    outline: none !important; }
+    outline: none !important;
+    /* Make button more visible for debugging */
+    border: 2px solid red !important;
+    border-radius: 4px !important;
+    background: rgba(255,0,0,0.1) !important; }
   
   /* Prevent page from sliding left - keep it in place */
   .fh5co-offcanvas #fh5co-page {

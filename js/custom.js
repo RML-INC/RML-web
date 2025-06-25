@@ -60,13 +60,19 @@ $(function(){
       console.log('iOS detected:', isIOS);
       console.log('User agent:', navigator.userAgent);
       
-      // Use a single, reliable event handler for all devices
-      $('.js-fh5co-nav-toggle').on('click touchstart', function(e){
-         e.preventDefault();
-         e.stopPropagation();
-         
-         console.log('Hamburger clicked/touched');
-         
+      // Debug: Check if button exists
+      var $hamburger = $('.js-fh5co-nav-toggle');
+      console.log('Hamburger button found:', $hamburger.length);
+      console.log('Hamburger button:', $hamburger);
+      
+      if ($hamburger.length === 0) {
+         console.error('Hamburger button not found!');
+         return;
+      }
+      
+      // Create a toggle function
+      var toggleMenu = function() {
+         console.log('Toggle function called');
          if ( $('body').hasClass('fh5co-offcanvas') ) {
             $('body').removeClass('fh5co-offcanvas');
             $('.js-fh5co-nav-toggle').removeClass('active');
@@ -76,7 +82,33 @@ $(function(){
             $('.js-fh5co-nav-toggle').addClass('active');
             console.log('Menu opened');
          }
-      });
+      };
+      
+      // Remove any existing event handlers
+      $hamburger.off('click touchstart mousedown touchend');
+      
+      // Add multiple event handlers for maximum compatibility
+      $hamburger
+         .on('click', function(e) {
+            console.log('Click event triggered');
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMenu();
+         })
+         .on('touchstart', function(e) {
+            console.log('Touchstart event triggered');
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMenu();
+         })
+         .on('touchend', function(e) {
+            console.log('Touchend event triggered');
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMenu();
+         });
+
+      console.log('Event handlers attached to hamburger button');
 
       $('#offcanvas-menu').css('height', $(window).height());
 
