@@ -52,21 +52,44 @@ $(function(){
 
       $('#fh5co-page').prepend($clone);
 
-      // click the burger - use click event for better cross-platform compatibility
-      $('.js-fh5co-nav-toggle').on('click', function(e){
-         e.preventDefault();
-         e.stopPropagation();
+      // Better iOS detection
+      var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) ||
+                  /CriOS|FxiOS|OPiOS|mercury/.test(navigator.userAgent);
+      
+      // click the burger - use different events for iOS vs others
+      if (isIOS) {
+         // iOS specific handling - try multiple event types
+         $('.js-fh5co-nav-toggle').on('touchstart mousedown', function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Add a small delay to ensure the event is processed
+            setTimeout(function() {
+               if ( $('body').hasClass('fh5co-offcanvas') ) {
+                  $('body').removeClass('fh5co-offcanvas');
+                  $('.js-fh5co-nav-toggle').removeClass('active');
+               } else {
+                  $('body').addClass('fh5co-offcanvas');
+                  $('.js-fh5co-nav-toggle').addClass('active');
+               }
+            }, 50);
+         });
+      } else {
+         // Non-iOS devices
+         $('.js-fh5co-nav-toggle').on('click', function(e){
+            e.preventDefault();
+            e.stopPropagation();
 
-         if ( $('body').hasClass('fh5co-offcanvas') ) {
-            $('body').removeClass('fh5co-offcanvas');
-            $(this).removeClass('active');
-         } else {
-            $('body').addClass('fh5co-offcanvas');
-            $(this).addClass('active');
-         }
-         // $('body').toggleClass('fh5co-offcanvas');
-
-      });
+            if ( $('body').hasClass('fh5co-offcanvas') ) {
+               $('body').removeClass('fh5co-offcanvas');
+               $(this).removeClass('active');
+            } else {
+               $('body').addClass('fh5co-offcanvas');
+               $(this).addClass('active');
+            }
+         });
+      }
 
       $('#offcanvas-menu').css('height', $(window).height());
 
@@ -89,14 +112,33 @@ $(function(){
 
    // Click outside of the Mobile Menu
    var mobileMenuOutsideClick = function() {
-      $(document).on('click', function (e) {
-       var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
-       if (!container.is(e.target) && container.has(e.target).length === 0) {
-         if ( $('body').hasClass('fh5co-offcanvas') ) {
-            $('body').removeClass('fh5co-offcanvas');
-         }
-       }
-      });
+      // Better iOS detection
+      var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) ||
+                  /CriOS|FxiOS|OPiOS|mercury/.test(navigator.userAgent);
+      
+      if (isIOS) {
+         // iOS specific handling - use touchstart for better responsiveness
+         $(document).on('touchstart', function (e) {
+            var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+               if ( $('body').hasClass('fh5co-offcanvas') ) {
+                  $('body').removeClass('fh5co-offcanvas');
+                  $('.js-fh5co-nav-toggle').removeClass('active');
+               }
+            }
+         });
+      } else {
+         // Non-iOS devices
+         $(document).on('click', function (e) {
+            var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+               if ( $('body').hasClass('fh5co-offcanvas') ) {
+                  $('body').removeClass('fh5co-offcanvas');
+               }
+            }
+         });
+      }
    };
 
    var counter = function() {
