@@ -46,10 +46,16 @@
     z-index: 9999 !important;
     padding: 20px !important;
     overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
     -webkit-transition: right 0.3s ease !important;
     -moz-transition: right 0.3s ease !important;
     -o-transition: right 0.3s ease !important;
-    transition: right 0.3s ease !important; }
+    transition: right 0.3s ease !important;
+    /* iOS specific fixes */
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important; }
   
   /* Show menu when offcanvas is active */
   .fh5co-offcanvas #offcanvas-menu {
@@ -76,7 +82,39 @@
     display: flex !important;
     align-items: center !important;
     -webkit-tap-highlight-color: transparent !important;
-    touch-action: manipulation !important; }
+    touch-action: manipulation !important;
+    /* iOS specific fixes */
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important; }
   
   #offcanvas-menu ul li a:hover {
-    color: #FABD15 !important; } } 
+    color: #FABD15 !important; } }
+
+/* iOS Specific Fixes */
+@supports (-webkit-touch-callout: none) {
+  /* iPhone/iPad specific styles */
+  .fh5co-nav-toggle {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important; }
+  
+  #offcanvas-menu {
+    /* Force hardware acceleration on iOS */
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    /* Prevent iOS zoom on double tap */
+    touch-action: pan-y !important; }
+  
+  #offcanvas-menu ul li a {
+    /* Prevent iOS zoom on double tap */
+    touch-action: manipulation !important;
+    /* Ensure proper touch handling */
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important; } } 
