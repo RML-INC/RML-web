@@ -70,8 +70,16 @@ $(function(){
          return;
       }
       
-      // Create a toggle function
+      // Create a toggle function with debounce
+      var lastToggleTime = 0;
       var toggleMenu = function() {
+         var now = Date.now();
+         if (now - lastToggleTime < 300) { // Prevent rapid toggles within 300ms
+            console.log('Toggle blocked - too soon');
+            return;
+         }
+         lastToggleTime = now;
+         
          console.log('Toggle function called');
          if ( $('body').hasClass('fh5co-offcanvas') ) {
             $('body').removeClass('fh5co-offcanvas');
@@ -87,26 +95,24 @@ $(function(){
       // Remove any existing event handlers
       $hamburger.off('click touchstart mousedown touchend');
       
-      // Add multiple event handlers for maximum compatibility
-      $hamburger
-         .on('click', function(e) {
-            console.log('Click event triggered');
-            e.preventDefault();
-            e.stopPropagation();
-            toggleMenu();
-         })
-         .on('touchstart', function(e) {
-            console.log('Touchstart event triggered');
-            e.preventDefault();
-            e.stopPropagation();
-            toggleMenu();
-         })
-         .on('touchend', function(e) {
-            console.log('Touchend event triggered');
+      // Use only touchstart for iOS, click for others
+      if (isIOS) {
+         // iOS: Use only touchstart to avoid the touchend issue
+         $hamburger.on('touchstart', function(e) {
+            console.log('Touchstart event triggered (iOS)');
             e.preventDefault();
             e.stopPropagation();
             toggleMenu();
          });
+      } else {
+         // Non-iOS: Use click event
+         $hamburger.on('click', function(e) {
+            console.log('Click event triggered (non-iOS)');
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMenu();
+         });
+      }
 
       console.log('Event handlers attached to hamburger button');
 
