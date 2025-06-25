@@ -14,6 +14,11 @@
 		<meta name="keywords" content="contact, contact RML, contact RML Inc, contact rml montana" />
 		<meta name="metatags" content="contact, contact RML, contact RML Inc, contact rml montana" />
 
+		<!-- Security Headers -->
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://maps.googleapis.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://formspree.io;">
+		<meta http-equiv="X-Frame-Options" content="DENY">
+		<meta http-equiv="X-Content-Type-Options" content="nosniff">
+		<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="shortcut icon" href="favicon.png">
@@ -59,9 +64,12 @@
 
 </script>
 
+	<link rel="stylesheet" href="css/mobile-fixes.css">
+	<!-- Animate.css -->
+
 </head>
 <body>
-	<div id="fh5co-wrapper"  itemscope itemtype="http://schema.org/LocalBusiness">
+	<div id="fh5co-wrapper"  itemscope itemtype="https://schema.org/LocalBusiness">
 	<div id="fh5co-page">
 		<div id="fh5co-header">
 			<header id="fh5co-header-section">
@@ -87,7 +95,7 @@
 			</header>
 		</div>	<!-- end:fh5co-header -->
 		<div class="rml-desktop">
-			<div class="fh5co-parallax" style="background-image: url(images/headers/rml-contact-us.jpg);" data-stellar-background-ratio="0.5">
+			<div class="fh5co-parallax" style="background-image: url(images/headers/rml-contact-us.jpg);">
 			<meta itemprop="image" content="images/headers/rml-matt-seth-close-up.jpg">
 				<div class="overlay"></div>
 					<div class="container">
@@ -104,7 +112,7 @@
 		</div>
 
 		<div class="rml-mobile-only">
-			<div class="fh5co-parallax" style="background-image: url(images/headers/rml-contact-us-mobile.jpg);" data-stellar-background-ratio="0.5">
+			<div class="fh5co-parallax" style="background-image: url(images/headers/rml-contact-us-mobile.jpg);">
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row">
@@ -123,7 +131,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<form id="contact" action="http://formspree.io/matt@rmlmontana.com" method="post">
+					<form id="contact" action="https://formspree.io/matt@rmlmontana.com" method="post">
 						<h3>
 							Contact <span itemprop="name">RML Inc.</span>
 						</h3>
@@ -227,7 +235,7 @@
 							<a href="https://www.facebook.com/rmlmontana"><i class="icon-facebook2"></i></a>
 							<a href="https://www.instagram.com/rml_montana/"><i class="icon-instagram"></i></a>
 							<a href="https://linkedin.com/in/rml-inc"><i class="icon-linkedin2"></i></a>
-							<a href="https://plus.google.com/u/0/101303152056100551342" target="_blank"><i class="icon-google-plus"></i></a>
+							<a href="https://plus.google.com/u/0/101303152056100551342" target="_blank" rel="noopener noreferrer"><i class="icon-google-plus"></i></a>
 						</p>
 					</div>
 				</div>
@@ -256,7 +264,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="copyright">
-								<p>&copy; Copyright 2016-2023 <a href="index.html">RML Inc:</a> Rocky Mountain Line. All Rights Reserved. <br />Website created by: <a href="http://jesseorrico.com" target="_blank">Jesse Orrico</a> / Images: <a href="https://unsplash.com/@jessedo81" target="_blank">Jesse Orrico</a></p>
+								<p>&copy; Copyright 2016-2025 <a href="index.html">RML Inc:</a> Rocky Mountain Line. All Rights Reserved. <br />Website created by: <a href="https://jesseorrico.com" target="_blank" rel="noopener noreferrer">Jesse Orrico</a> / Images: <a href="https://unsplash.com/@jessedo81" target="_blank" rel="noopener noreferrer">Jesse Orrico</a></p>
 							</div>
 						</div>
 					</div>
@@ -280,10 +288,8 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Owl Slider -->
-	<!-- // <script src="js/owl.carousel.min.js"></script> -->
+	<!-- Stellar Parallax - Removed due to jQuery 3.7.1 compatibility issues -->
+	<!-- <script src="js/jquery.stellar.min.js"></script> -->
 	<!-- Date Picker -->
 	<script src="js/bootstrap-datepicker-1.9.0.min.js"></script>
 	<!-- CS Select -->

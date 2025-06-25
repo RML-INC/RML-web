@@ -52,19 +52,56 @@ $(function(){
 
       $('#fh5co-page').prepend($clone);
 
-      // click the burger
-      $('.js-fh5co-nav-toggle').on('click', function(){
-
+      // Better iOS detection
+      var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) ||
+                  /CriOS|FxiOS|OPiOS|mercury/.test(navigator.userAgent);
+      
+      // Debug: Check if button exists
+      var $hamburger = $('.js-fh5co-nav-toggle');
+      
+      if ($hamburger.length === 0) {
+         console.error('Hamburger button not found!');
+         return;
+      }
+      
+      // Create a toggle function with debounce
+      var lastToggleTime = 0;
+      var toggleMenu = function() {
+         var now = Date.now();
+         if (now - lastToggleTime < 300) { // Prevent rapid toggles within 300ms
+            return;
+         }
+         lastToggleTime = now;
+         
          if ( $('body').hasClass('fh5co-offcanvas') ) {
             $('body').removeClass('fh5co-offcanvas');
-            $(this).removeClass('active');
+            $('.js-fh5co-nav-toggle').removeClass('active');
          } else {
             $('body').addClass('fh5co-offcanvas');
-            $(this).addClass('active');
+            $('.js-fh5co-nav-toggle').addClass('active');
          }
-         // $('body').toggleClass('fh5co-offcanvas');
-
-      });
+      };
+      
+      // Remove any existing event handlers
+      $hamburger.off('click touchstart mousedown touchend');
+      
+      // Use only touchstart for iOS, click for others
+      if (isIOS) {
+         // iOS: Use only touchstart to avoid the touchend issue
+         $hamburger.on('touchstart', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMenu();
+         });
+      } else {
+         // Non-iOS: Use click event
+         $hamburger.on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMenu();
+         });
+      }
 
       $('#offcanvas-menu').css('height', $(window).height());
 
@@ -87,13 +124,20 @@ $(function(){
 
    // Click outside of the Mobile Menu
    var mobileMenuOutsideClick = function() {
-      $(document).click(function (e) {
-       var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
-       if (!container.is(e.target) && container.has(e.target).length === 0) {
-         if ( $('body').hasClass('fh5co-offcanvas') ) {
-            $('body').removeClass('fh5co-offcanvas');
+      // Better iOS detection
+      var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) ||
+                  /CriOS|FxiOS|OPiOS|mercury/.test(navigator.userAgent);
+      
+      // Use a single event handler for all devices
+      $(document).on('click touchstart', function (e) {
+         var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
+         if (!container.is(e.target) && container.has(e.target).length === 0) {
+            if ( $('body').hasClass('fh5co-offcanvas') ) {
+               $('body').removeClass('fh5co-offcanvas');
+               $('.js-fh5co-nav-toggle').removeClass('active');
+            }
          }
-       }
       });
    };
 
@@ -213,9 +257,9 @@ $(function(){
 
    };
 
-   // Parallax
+   // Parallax - Disabled due to jQuery 3.7.1 compatibility issues
    var parallax = function() {
-      $(window).stellar();
+      // $(window).stellar(); // Disabled - incompatible with jQuery 3.7.1
    };
 
 
