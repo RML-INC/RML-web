@@ -125,7 +125,12 @@
     -webkit-user-select: none !important;
     /* Force hardware acceleration */
     -webkit-transform: translateZ(0) !important;
-    transform: translateZ(0) !important; }
+    transform: translateZ(0) !important;
+    /* Keep absolute positioning and right alignment */
+    position: absolute !important;
+    top: 0px !important;
+    right: 0px !important;
+    z-index: 10000 !important; }
   
   #offcanvas-menu {
     /* Force hardware acceleration on iOS */
@@ -145,8 +150,10 @@
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @supports (-webkit-touch-callout: none) {
     .fh5co-nav-toggle {
-      /* Force clickable area */
-      position: relative !important;
+      /* Keep absolute positioning */
+      position: absolute !important;
+      top: 0px !important;
+      right: 0px !important;
       z-index: 10001 !important;
       /* Ensure button is above everything */
       background: rgba(0,0,0,0.01) !important;

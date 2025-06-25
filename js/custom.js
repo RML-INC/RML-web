@@ -57,39 +57,26 @@ $(function(){
                   (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) ||
                   /CriOS|FxiOS|OPiOS|mercury/.test(navigator.userAgent);
       
-      // click the burger - use different events for iOS vs others
-      if (isIOS) {
-         // iOS specific handling - try multiple event types
-         $('.js-fh5co-nav-toggle').on('touchstart mousedown', function(e){
-            e.preventDefault();
-            e.stopPropagation();
-            
-            // Add a small delay to ensure the event is processed
-            setTimeout(function() {
-               if ( $('body').hasClass('fh5co-offcanvas') ) {
-                  $('body').removeClass('fh5co-offcanvas');
-                  $('.js-fh5co-nav-toggle').removeClass('active');
-               } else {
-                  $('body').addClass('fh5co-offcanvas');
-                  $('.js-fh5co-nav-toggle').addClass('active');
-               }
-            }, 50);
-         });
-      } else {
-         // Non-iOS devices
-         $('.js-fh5co-nav-toggle').on('click', function(e){
-            e.preventDefault();
-            e.stopPropagation();
-
-            if ( $('body').hasClass('fh5co-offcanvas') ) {
-               $('body').removeClass('fh5co-offcanvas');
-               $(this).removeClass('active');
-            } else {
-               $('body').addClass('fh5co-offcanvas');
-               $(this).addClass('active');
-            }
-         });
-      }
+      console.log('iOS detected:', isIOS);
+      console.log('User agent:', navigator.userAgent);
+      
+      // Use a single, reliable event handler for all devices
+      $('.js-fh5co-nav-toggle').on('click touchstart', function(e){
+         e.preventDefault();
+         e.stopPropagation();
+         
+         console.log('Hamburger clicked/touched');
+         
+         if ( $('body').hasClass('fh5co-offcanvas') ) {
+            $('body').removeClass('fh5co-offcanvas');
+            $('.js-fh5co-nav-toggle').removeClass('active');
+            console.log('Menu closed');
+         } else {
+            $('body').addClass('fh5co-offcanvas');
+            $('.js-fh5co-nav-toggle').addClass('active');
+            console.log('Menu opened');
+         }
+      });
 
       $('#offcanvas-menu').css('height', $(window).height());
 
@@ -117,28 +104,16 @@ $(function(){
                   (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) ||
                   /CriOS|FxiOS|OPiOS|mercury/.test(navigator.userAgent);
       
-      if (isIOS) {
-         // iOS specific handling - use touchstart for better responsiveness
-         $(document).on('touchstart', function (e) {
-            var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
-            if (!container.is(e.target) && container.has(e.target).length === 0) {
-               if ( $('body').hasClass('fh5co-offcanvas') ) {
-                  $('body').removeClass('fh5co-offcanvas');
-                  $('.js-fh5co-nav-toggle').removeClass('active');
-               }
+      // Use a single event handler for all devices
+      $(document).on('click touchstart', function (e) {
+         var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
+         if (!container.is(e.target) && container.has(e.target).length === 0) {
+            if ( $('body').hasClass('fh5co-offcanvas') ) {
+               $('body').removeClass('fh5co-offcanvas');
+               $('.js-fh5co-nav-toggle').removeClass('active');
             }
-         });
-      } else {
-         // Non-iOS devices
-         $(document).on('click', function (e) {
-            var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
-            if (!container.is(e.target) && container.has(e.target).length === 0) {
-               if ( $('body').hasClass('fh5co-offcanvas') ) {
-                  $('body').removeClass('fh5co-offcanvas');
-               }
-            }
-         });
-      }
+         }
+      });
    };
 
    var counter = function() {
