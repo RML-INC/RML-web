@@ -270,9 +270,10 @@ $(function(){
 
    };
 
-   // Parallax
+   // Parallax - Disabled due to jQuery 3.7.1 compatibility issues
    var parallax = function() {
-      $(window).stellar();
+      // $(window).stellar(); // Disabled - incompatible with jQuery 3.7.1
+      console.log('Parallax disabled - jQuery Stellar incompatible with jQuery 3.7.1');
    };
 
 
