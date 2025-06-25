@@ -57,13 +57,8 @@ $(function(){
                   (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) ||
                   /CriOS|FxiOS|OPiOS|mercury/.test(navigator.userAgent);
       
-      console.log('iOS detected:', isIOS);
-      console.log('User agent:', navigator.userAgent);
-      
       // Debug: Check if button exists
       var $hamburger = $('.js-fh5co-nav-toggle');
-      console.log('Hamburger button found:', $hamburger.length);
-      console.log('Hamburger button:', $hamburger);
       
       if ($hamburger.length === 0) {
          console.error('Hamburger button not found!');
@@ -75,20 +70,16 @@ $(function(){
       var toggleMenu = function() {
          var now = Date.now();
          if (now - lastToggleTime < 300) { // Prevent rapid toggles within 300ms
-            console.log('Toggle blocked - too soon');
             return;
          }
          lastToggleTime = now;
          
-         console.log('Toggle function called');
          if ( $('body').hasClass('fh5co-offcanvas') ) {
             $('body').removeClass('fh5co-offcanvas');
             $('.js-fh5co-nav-toggle').removeClass('active');
-            console.log('Menu closed');
          } else {
             $('body').addClass('fh5co-offcanvas');
             $('.js-fh5co-nav-toggle').addClass('active');
-            console.log('Menu opened');
          }
       };
       
@@ -99,7 +90,6 @@ $(function(){
       if (isIOS) {
          // iOS: Use only touchstart to avoid the touchend issue
          $hamburger.on('touchstart', function(e) {
-            console.log('Touchstart event triggered (iOS)');
             e.preventDefault();
             e.stopPropagation();
             toggleMenu();
@@ -107,14 +97,11 @@ $(function(){
       } else {
          // Non-iOS: Use click event
          $hamburger.on('click', function(e) {
-            console.log('Click event triggered (non-iOS)');
             e.preventDefault();
             e.stopPropagation();
             toggleMenu();
          });
       }
-
-      console.log('Event handlers attached to hamburger button');
 
       $('#offcanvas-menu').css('height', $(window).height());
 
@@ -273,7 +260,6 @@ $(function(){
    // Parallax - Disabled due to jQuery 3.7.1 compatibility issues
    var parallax = function() {
       // $(window).stellar(); // Disabled - incompatible with jQuery 3.7.1
-      console.log('Parallax disabled - jQuery Stellar incompatible with jQuery 3.7.1');
    };
 
 
