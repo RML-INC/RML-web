@@ -18,7 +18,13 @@
     display: block !important;
     margin: 0 auto !important;
     cursor: pointer !important;
-    padding: 6px !important; }
+    padding: 6px !important;
+    /* Ensure button is clickable */
+    pointer-events: auto !important;
+    /* Remove any default button styling */
+    background: transparent !important;
+    border: none !important;
+    outline: none !important; }
   
   /* Prevent page from sliding left - keep it in place */
   .fh5co-offcanvas #fh5co-page {
@@ -103,7 +109,11 @@
     appearance: none !important;
     background: transparent !important;
     border: none !important;
-    outline: none !important; }
+    outline: none !important;
+    /* Ensure iOS button is clickable */
+    pointer-events: auto !important;
+    /* Prevent iOS zoom */
+    touch-action: manipulation !important; }
   
   #offcanvas-menu {
     /* Force hardware acceleration on iOS */

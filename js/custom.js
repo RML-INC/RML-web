@@ -52,8 +52,8 @@ $(function(){
 
       $('#fh5co-page').prepend($clone);
 
-      // click the burger - add iOS touch support
-      $('.js-fh5co-nav-toggle').on('click touchstart touchend', function(e){
+      // click the burger - use click event for better cross-platform compatibility
+      $('.js-fh5co-nav-toggle').on('click', function(e){
          e.preventDefault();
          e.stopPropagation();
 
@@ -89,7 +89,7 @@ $(function(){
 
    // Click outside of the Mobile Menu
    var mobileMenuOutsideClick = function() {
-      $(document).on('click touchstart touchend', function (e) {
+      $(document).on('click', function (e) {
        var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
        if (!container.is(e.target) && container.has(e.target).length === 0) {
          if ( $('body').hasClass('fh5co-offcanvas') ) {
