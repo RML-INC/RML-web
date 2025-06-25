@@ -27,7 +27,6 @@ This website has been prepared to run on GitHub Pages. To deploy:
 - `services.html` - Services page
 - `clients.html` - Clients page
 - `contact.html` - Contact page
-- `_config.yaml` - Jekyll configuration for GitHub Pages
 - `css/` - Stylesheets
 - `js/` - JavaScript files
 - `images/` - Image assets
