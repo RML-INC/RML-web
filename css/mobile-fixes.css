@@ -10,11 +10,71 @@
     -moz-user-select: none !important;
     -ms-user-select: none !important;
     user-select: none !important;
-    touch-action: manipulation !important; }
+    touch-action: manipulation !important;
+    position: absolute !important;
+    top: 0px !important;
+    right: 0px !important;
+    z-index: 10000 !important;
+    display: block !important;
+    margin: 0 auto !important;
+    cursor: pointer !important;
+    padding: 6px !important; }
   
   #offcanvas-menu ul li a {
     min-height: 44px !important;
     display: flex !important;
     align-items: center !important;
     -webkit-tap-highlight-color: transparent !important;
-    touch-action: manipulation !important; } } 
+    touch-action: manipulation !important; }
+  
+  /* Fix mobile menu positioning when offcanvas is active */
+  .fh5co-offcanvas #offcanvas-menu {
+    right: 0 !important;
+    -webkit-transition: right 0.5s ease !important;
+    -moz-transition: right 0.5s ease !important;
+    -o-transition: right 0.5s ease !important;
+    transition: right 0.5s ease !important;
+    z-index: 9999 !important;
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    background: #222 !important;
+    width: 240px !important;
+    padding: 20px !important;
+    overflow-y: auto !important; }
+  
+  /* Ensure menu is visible and properly positioned */
+  #offcanvas-menu {
+    -webkit-transition: right 0.5s ease !important;
+    -moz-transition: right 0.5s ease !important;
+    -o-transition: right 0.5s ease !important;
+    transition: right 0.5s ease !important;
+    z-index: 9999 !important;
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    background: #222 !important;
+    width: 240px !important;
+    padding: 20px !important;
+    overflow-y: auto !important; }
+  
+  /* Ensure menu content is visible */
+  #offcanvas-menu ul {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important; }
+  
+  #offcanvas-menu ul li {
+    padding: 0 !important;
+    margin: 0 0 10px 0 !important;
+    list-style: none !important; }
+  
+  #offcanvas-menu ul li a {
+    font-size: 18px !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none !important;
+    display: block !important;
+    padding: 10px 0 !important; }
+  
+  #offcanvas-menu ul li a:hover {
+    color: #FABD15 !important; } } 
